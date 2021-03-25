@@ -276,6 +276,10 @@ body {
     border: 2px solid #dbdbdb;
 }
 
+#list {
+    font-size: 110%;
+}
+
 @media (max-width: 1800px) {
     .mainMain {
         margin-left: 9%;
@@ -319,3 +323,5 @@ body {
         padding-bottom: 5%;
     }
 }
+
+

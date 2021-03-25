@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8e9bc082-44cf-4e1b-8881-44a0d0fe0ed6" name="Default Changelist" comment="" />
+    <list default="true" id="8e9bc082-44cf-4e1b-8881-44a0d0fe0ed6" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Styles/Style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Styles/Style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html.html" beforeDir="false" afterPath="$PROJECT_DIR$/html.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,7 +14,11 @@
   <component name="ComposerSettings">
     <execution />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1oO7N2TxRe3M3GwFFYSbtFWsbo5" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -61,7 +69,11 @@
       <workItem from="1615641008538" duration="7193000" />
       <workItem from="1615715887366" duration="20101000" />
       <workItem from="1615831761648" duration="6608000" />
-      <workItem from="1615995143371" duration="1029000" />
+      <workItem from="1615995143371" duration="1629000" />
+      <workItem from="1616315457158" duration="5010000" />
+      <workItem from="1616516147953" duration="6625000" />
+      <workItem from="1616615730711" duration="5636000" />
+      <workItem from="1616693028180" duration="4839000" />
     </task>
     <servers />
   </component>
@@ -127,11 +139,11 @@
       <screen x="1920" y="0" width="1360" height="728" />
     </state>
     <state x="1912" y="-8" width="1376" height="784" key="dock-window-1/0.0.1920.1040/1920.0.1360.728@0.0.1920.1040" timestamp="1615117174661" />
-    <state x="748" y="187" width="826" height="763" key="find.popup" timestamp="1615408147771">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="2450" y="131" width="585" height="534" key="find.popup" timestamp="1616519218464">
+      <screen x="1920" y="0" width="1360" height="728" />
     </state>
     <state x="748" y="187" width="826" height="763" key="find.popup/0.0.1920.1040/1920.0.1360.728@0.0.1920.1040" timestamp="1615408147771" />
-    <state x="2450" y="131" width="585" height="534" key="find.popup/0.0.1920.1040/1920.0.1360.728@1920.0.1360.728" timestamp="1614022026154" />
+    <state x="2450" y="131" width="585" height="534" key="find.popup/0.0.1920.1040/1920.0.1360.728@1920.0.1360.728" timestamp="1616519218464" />
     <state x="2443" y="136" key="refactoring.ChangeSignatureDialog" timestamp="1614013447732">
       <screen x="1920" y="0" width="1360" height="728" />
     </state>
@@ -140,10 +152,10 @@
       <screen x="1920" y="0" width="1360" height="728" />
     </state>
     <state x="2256" y="162" key="run.anything.popup/0.0.1920.1040/1920.0.1360.728@1920.0.1360.728" timestamp="1614018523526" />
-    <state x="484" y="70" width="949" height="969" key="search.everywhere.popup" timestamp="1615835497461">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="2263" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1616520258363">
+      <screen x="1920" y="0" width="1360" height="728" />
     </state>
     <state x="484" y="70" width="949" height="969" key="search.everywhere.popup/0.0.1920.1040/1920.0.1360.728@0.0.1920.1040" timestamp="1615835497461" />
-    <state x="2263" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1360.728@1920.0.1360.728" timestamp="1615717481599" />
+    <state x="2263" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1360.728@1920.0.1360.728" timestamp="1616520258363" />
   </component>
 </project>
