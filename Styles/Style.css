@@ -129,7 +129,7 @@ body {
 }
 
 .tabcontent {
-    animation: tab-click 350ms forwards;
+    animation: tab-click 250ms forwards;
 }
 
 .tabcontent h3 {

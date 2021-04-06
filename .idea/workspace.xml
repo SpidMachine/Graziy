@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8e9bc082-44cf-4e1b-8881-44a0d0fe0ed6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Styles/Style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Styles/Style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html.html" beforeDir="false" afterPath="$PROJECT_DIR$/html.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/script.js" afterDir="false" />
-    </list>
+    <list default="true" id="8e9bc082-44cf-4e1b-8881-44a0d0fe0ed6" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -27,8 +22,9 @@
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql&#10;mariadb" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="H:/Graziy" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -78,89 +74,11 @@
       <workItem from="1617005497532" duration="10848000" />
       <workItem from="1617444349675" duration="4927000" />
       <workItem from="1617535113075" duration="16994000" />
+      <workItem from="1617723861861" duration="1197000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="2192" y="22" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1614710282979">
-      <screen x="1920" y="0" width="1360" height="728" />
-    </state>
-    <state x="2192" y="22" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.0.1360.728@1920.0.1360.728" timestamp="1614710282979" />
-    <state x="2352" y="166" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1614960037270">
-      <screen x="1920" y="0" width="1360" height="728" />
-    </state>
-    <state x="2352" y="166" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/1920.0.1360.728@1920.0.1360.728" timestamp="1614960037270" />
-    <state x="2330" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1614450351616">
-      <screen x="1920" y="0" width="1360" height="728" />
-    </state>
-    <state x="2330" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/1920.0.1360.728@1920.0.1360.728" timestamp="1614450351616" />
-    <state x="649" y="170" key="FileChooserDialogImpl" timestamp="1615753912092">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="649" y="170" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1360.728@0.0.1920.1040" timestamp="1615753912092" />
-    <state x="2380" y="119" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1360.728@1920.0.1360.728" timestamp="1614964108723" />
-    <state width="1293" height="78" key="GridCell.Tab.0.bottom" timestamp="1615407505812">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1293" height="78" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1360.728@0.0.1920.1040" timestamp="1615407505812" />
-    <state width="901" height="13" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1360.728@1920.0.1360.728" timestamp="1615115019061" />
-    <state width="1293" height="78" key="GridCell.Tab.0.center" timestamp="1615407505812">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1293" height="78" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1360.728@0.0.1920.1040" timestamp="1615407505812" />
-    <state width="901" height="13" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1360.728@1920.0.1360.728" timestamp="1615115019061" />
-    <state width="1293" height="78" key="GridCell.Tab.0.left" timestamp="1615407505812">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1293" height="78" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1360.728@0.0.1920.1040" timestamp="1615407505812" />
-    <state width="901" height="13" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1360.728@1920.0.1360.728" timestamp="1615115019061" />
-    <state width="1293" height="78" key="GridCell.Tab.0.right" timestamp="1615407505812">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1293" height="78" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1360.728@0.0.1920.1040" timestamp="1615407505812" />
-    <state width="901" height="13" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1360.728@1920.0.1360.728" timestamp="1615115019061" />
-    <state x="2427" y="87" key="NewPhpClassDialog" timestamp="1614960150238">
-      <screen x="1920" y="0" width="1360" height="728" />
-    </state>
-    <state x="2427" y="87" key="NewPhpClassDialog/0.0.1920.1040/1920.0.1360.728@1920.0.1360.728" timestamp="1614960150238" />
-    <state x="726" y="410" key="NewPhpFileDialog" timestamp="1615116494408">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="726" y="410" key="NewPhpFileDialog/0.0.1920.1040/1920.0.1360.728@0.0.1920.1040" timestamp="1615116494408" />
-    <state x="2434" y="287" key="NewPhpFileDialog/0.0.1920.1040/1920.0.1360.728@1920.0.1360.728" timestamp="1614960156270" />
-    <state x="2101" y="9" key="SettingsEditor" timestamp="1613149426564">
-      <screen x="1920" y="0" width="1360" height="728" />
-    </state>
-    <state x="2101" y="9" key="SettingsEditor/0.0.1920.1040/1920.0.1360.728@1920.0.1360.728" timestamp="1613149426564" />
-    <state x="2330" y="169" key="com.intellij.database.dbimport.ImportUtil.ChooseTargetDialog" timestamp="1615012716591">
-      <screen x="1920" y="0" width="1360" height="728" />
-    </state>
-    <state x="2330" y="169" key="com.intellij.database.dbimport.ImportUtil.ChooseTargetDialog/0.0.1920.1040/1920.0.1360.728@1920.0.1360.728" timestamp="1615012716591" />
-    <state x="1912" y="-8" width="1376" height="784" key="dock-window-1" timestamp="1615117174661">
-      <screen x="1920" y="0" width="1360" height="728" />
-    </state>
-    <state x="1912" y="-8" width="1376" height="784" key="dock-window-1/0.0.1920.1040/1920.0.1360.728@0.0.1920.1040" timestamp="1615117174661" />
-    <state x="748" y="187" width="826" height="763" key="find.popup" timestamp="1617028296852">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="748" y="187" width="826" height="763" key="find.popup/0.0.1920.1040/1920.0.1360.728@0.0.1920.1040" timestamp="1617028296852" />
-    <state x="2450" y="131" width="585" height="534" key="find.popup/0.0.1920.1040/1920.0.1360.728@1920.0.1360.728" timestamp="1616519218464" />
-    <state x="2443" y="136" key="refactoring.ChangeSignatureDialog" timestamp="1614013447732">
-      <screen x="1920" y="0" width="1360" height="728" />
-    </state>
-    <state x="2443" y="136" key="refactoring.ChangeSignatureDialog/0.0.1920.1040/1920.0.1360.728@1920.0.1360.728" timestamp="1614013447732" />
-    <state x="2256" y="162" key="run.anything.popup" timestamp="1617639009967">
-      <screen x="1920" y="0" width="1360" height="728" />
-    </state>
-    <state x="474" y="231" key="run.anything.popup/0.0.1920.1040/1920.0.1360.728@0.0.1920.1040" timestamp="1617033451175" />
-    <state x="2256" y="162" key="run.anything.popup/0.0.1920.1040/1920.0.1360.728@1920.0.1360.728" timestamp="1617639009967" />
-    <state x="2263" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1617637784157">
-      <screen x="1920" y="0" width="1360" height="728" />
-    </state>
-    <state x="484" y="70" width="949" height="969" key="search.everywhere.popup/0.0.1920.1040/1920.0.1360.728@0.0.1920.1040" timestamp="1615835497461" />
-    <state x="2263" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1360.728@1920.0.1360.728" timestamp="1617637784157" />
   </component>
 </project>
