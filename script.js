@@ -18,10 +18,6 @@ function openTab(evt, cityName) {
         tablinks[i].className = tablinks[i].className.replace(" active", "");
     }
 
-    /**
-     * Вот тут исключен ивент, посмотри на html как это сделано
-     * @type {string}
-     */
     // Show the current tab, and add an "active" class to the button that opened the tab
     document.getElementById(cityName).style.display = "block";
     document.getElementsByName(cityName)[0].className += " active";
@@ -45,9 +41,8 @@ function currentTab() {
         }
     } else {
         openTab(null, 'Main');
-        sessionStorage.removeItem('tabName')
-        sessionStorage.removeItem('cardName')
-
+        sessionStorage.removeItem('tabName');
+        sessionStorage.removeItem('cardName');
     }
 
 
@@ -87,5 +82,7 @@ $(function () {
         });
     });
 });
+
+
 
 
