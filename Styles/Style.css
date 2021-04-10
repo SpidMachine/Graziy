@@ -236,6 +236,7 @@ body {
     border: 5px solid white;
     height: auto;
     z-index: 9999;
+    width: 40%;
 }
 
 #magnify img {
@@ -298,6 +299,7 @@ body {
 .image__wrapper {
     display: table;
     width: 500px;
+    margin: 2%;
 }
 
 #idMost-Bloxina img {
@@ -325,7 +327,10 @@ body {
     padding: 1%;
     margin: 2%;
     cursor: pointer;
+}
 
+.divSpravkaNamedAfterThem {
+    margin-left: 10%;
 }
 
 .rowMemorial {

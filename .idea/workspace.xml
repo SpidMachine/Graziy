@@ -13,6 +13,14 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
   <component name="ProjectId" id="1oO7N2TxRe3M3GwFFYSbtFWsbo5" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -26,7 +34,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -74,7 +82,11 @@
       <workItem from="1617005497532" duration="10848000" />
       <workItem from="1617444349675" duration="4927000" />
       <workItem from="1617535113075" duration="16994000" />
-      <workItem from="1617723861861" duration="1197000" />
+      <workItem from="1617723861861" duration="3812000" />
+      <workItem from="1617774766189" duration="5538000" />
+      <workItem from="1617791895530" duration="1373000" />
+      <workItem from="1617859671798" duration="7698000" />
+      <workItem from="1617947171910" duration="1827000" />
     </task>
     <servers />
   </component>
