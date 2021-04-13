@@ -18,14 +18,25 @@ require_once "request.php";
 
     <div class="tab" id="aside1">
         <button class="tablinks active" name="Main" onclick="openTab(event, 'Main')">Главная</button>
-        <button class="tablinks" name="Streets" onclick="openTab(event, 'Streets')">Улицы</button>
-        <button class="tablinks" name="Monuments" onclick="openTab(event, 'Monuments')">Памятники</button>
-        <button class="tablinks" name="Memorials" onclick="openTab(event, 'Memorials')">Мемориальные доски</button>
-        <button class="tablinks" name="NamedAfterThem" onclick="openTab(event, 'NamedAfterThem')">Их именами названы
-            школы
-        </button>
+        <div class="dropdown">
+            <button class="dropbtn" onclick="myFunction()">На нашем сайте</button>
+            <div class="dropdown-content" id="myDropdown">
+                <button class="tablinks" name="Streets" onclick="openTab(event, 'Streets')">Улицы</button>
+                <button class="tablinks" name="Monuments" onclick="openTab(event, 'Monuments')">Памятники</button>
+                <button class="tablinks" name="WarGraves" onclick="openTab(event, 'WarGraves')">Воинские
+                    захоронения
+                </button>
+                <button class="tablinks" name="NamedAfterThem" onclick="openTab(event, 'NamedAfterThem')">Их именами
+                    названы
+                    школы
+                </button>
+                <button class="tablinks" name="Memorials" onclick="openTab(event, 'Memorials')">Мемориальные
+                    знаки и таблички
+                </button>
+            </div>
+        </div>
         <button class="tablinks" name="Memorials" onclick="openTab(event, 'Memorials')">Квест-игры</button>
-        <button class="tablinks" name="Memorials" onclick="openTab(event, 'Memorials')">Воинские захороненния</button>
+
         <a href="https://forms.gle/bDQtAER6EuqUWtvd7" id="alert">
             <button class="tablinks" name="Memorials">
                 Проверь себя
@@ -5590,7 +5601,7 @@ require_once "request.php";
             </div>
         </div>
 
-        <div class="tabcontent" id="school-33">
+        <div class="tabcontent" id="school-333">
             <div>
                 <div style="display: flex">
                     <div class="strDiscript">
@@ -5636,12 +5647,143 @@ require_once "request.php";
             </div>
         </div>
     </span>
+
+    <span>
+        <div class="tabcontent" id="graves-1">
+             <div class="strDiscript">
+                    <h4><b>Воинское кладбище</b></h4>
+                 <div class="image__wrapper">
+                    <img alt="" class="minimized" src="Styles/PhotoWarGraves/1%20Воинское%20кладбище.jpg" style="width: 50%;
+    margin-left: 10%;">
+                </div>
+                    <p><strong>Местоположение:</strong><br>
+                        Расположено по адресу: г. Витебск, ул. Советская.<br>
+                    </p>
+                        <p>2 скульптуры были установлены в 1956 году. Реконструированы в 2015 году.
+                            Кладбище представляет собой 1 братская, 11 индивидуальных могил, 2 одиночные скульптуры -
+                            каждая по 4 метра,
+                            выполнены из полимербетона.
+                        </p>
+                    <p>
+                        <i><strong>Посмотреть на карте:</strong><br><a class="aMemorialCard"
+                                                                       href="https://goo.gl/maps/xiBCWWnSq2awQkQw8">
+                            Ш. 55.19942236
+                            Д. 30.20211339
+                        </a>
+                        </i>
+                    </p>
+                    <p>
+                        <img alt="" src="material/istoricheskaya-spravka.png" style="width: 23%"><br>
+                    </p>
+                        </div>
+        </div>
+
+        <div class="tabcontent" id="graves-2">
+             <div class="strDiscript">
+                    <h4><b>Воинское кладбище</b></h4>
+                 <div class="image__wrapper">
+                    <img alt="" class="minimized" src="Styles/PhotoWarGraves/1%20Воинское%20кладбище.jpg" style="width: 50%;
+    margin-left: 10%;">
+                </div>
+                    <p><strong>Местоположение:</strong><br>
+                        Расположено по адресу: г. Витебск, ул. Советская.<br>
+                    </p>
+                        <p>2 скульптуры были установлены в 1956 году. Реконструированы в 2015 году.
+                            Кладбище представляет собой 1 братская, 11 индивидуальных могил, 2 одиночные скульптуры -
+                            каждая по 4 метра,
+                            выполнены из полимербетона.
+                        </p>
+                    <p>
+                        <i><strong>Посмотреть на карте:</strong><br><a class="aMemorialCard"
+                                                                       href="https://goo.gl/maps/EqURj7BN2UPe96FZ9">
+                            Ш. 55.21323998
+                            Д. 30.19686699
+                        </a>
+                        </i>
+                    </p>
+                    <p>
+                        <img alt="" src="material/istoricheskaya-spravka.png" style="width: 23%"><br>
+                    </p>
+                        </div>
+        </div>
+
+        <div class="tabcontent" id="graves-3">
+             <div class="strDiscript">
+                    <h4><b>Воинский участок кладбища</b></h4>
+                 <div class="image__wrapper">
+                    <img alt="" class="minimized" src="Styles/PhotoWarGraves/1%20Воинское%20кладбище.jpg" style="width: 50%;
+    margin-left: 10%;">
+                </div>
+                    <p><strong>Местоположение:</strong><br>
+                        Расположен по адресу: г. Витебск, ул. Сенненская (гражданское кладбище «Луческое»).<br>
+                    </p>
+                        <p>
+                            <span style="margin-left: 3%">Первые</span> захоронения воинов происходили после
+                            освобождения города.
+                            Перезахоронения в 1961
+                            и 1973 гг. <br>
+
+                            <span style="margin-left: 3%">Представляет</span> собой 2 братских, 8 индивидуальных могил.
+                                Обелиск из  железобетона высотой 6 метров - с надписью «Вечная слава героям, павшим в
+                                борьбе за свободу и независимость нашей родины». Бетонный обелиск установлен в 1975 году.
+                        </p>
+                    <p>
+                        <i><strong>Посмотреть на карте:</strong><br><a class="aMemorialCard"
+                                                                       href="https://goo.gl/maps/bzAsixYjFBm2EMWP6">
+                            Ш. 55.15983348
+                            Д. 30.18293152
+                        </a>
+                        </i>
+                    </p>
+                    <p>
+                        <img alt="" src="material/istoricheskaya-spravka.png" style="width: 23%"><br>
+                    </p>
+                        </div>
+        </div>
+
+        <div class="tabcontent" id="graves-4">
+             <div class="strDiscript">
+                    <h4><b>Воинский участок кладбища</b></h4>
+                 <div class="image__wrapper">
+                    <img alt="" class="minimized" src="Styles/PhotoWarGraves/1%20Воинское%20кладбище.jpg" style="width: 50%;
+    margin-left: 10%;">
+                </div>
+                    <p><strong>Местоположение:</strong><br>
+                        Расположен по адресу: г. Витебск, ул. Сенненская (гражданское кладбище «Луческое»).<br>
+                    </p>
+                        <p>
+                            <span style="margin-left: 3%">Первые</span> захоронения воинов происходили после
+                            освобождения города.
+                            Перезахоронения в
+                            1961 и
+                            1973 гг. <br>
+
+                            <span style="margin-left: 3%">
+                                Представляет собой 2 братских, 8 индивидуальных могил. Обелиск из  железобетона
+                                высотой 6 метров - с надписью «Вечная слава героям, павшим в борьбе за свободу и
+                                независимость нашей родины». Бетонный обелиск установлен в 1975 году.
+                            </span>
+                        </p>
+                    <p>
+                        <i><strong>Посмотреть на карте:</strong><br><a class="aMemorialCard"
+                                                                       href="https://goo.gl/maps/xiBCWWnSq2awQkQw8">
+                            Ш. 55.15983348
+                            Д. 30.18293152
+                        </a>
+                        </i>
+                    </p>
+                    <p>
+                        <img alt="" src="material/istoricheskaya-spravka.png" style="width: 23%"><br>
+                    </p>
+                        </div>
+        </div>
+    </span>
     <!-------------------------------------------------Card Content-->
 
     <div class="tabcontent" id="Streets">
         <div class="part3">
             <h3 style="margin-top: 1%; opacity: 80%; background-color: #eaeaea; border: 2px solid #dbdbdb; padding: 0.5%">
-                Места силы Витебск - улицы</h3>
+                Места силы. Витебск - улицы</h3>
             <p><span style="margin-left: 3%">Великая</span> Отечественная война прокатилась через Витебск сначала с
                 запада
                 на восток, потом с востока на запад. А Улица Князева
@@ -6353,7 +6495,7 @@ require_once "request.php";
 
     <div class="tabcontent" id="Memorials">
         <h3 style="margin-top: 1%; opacity: 80%; background-color: #eaeaea; border: 2px solid #dbdbdb; padding: 0.5%;">
-            Места силы Витебск - мемориальные доски</h3>
+            Места силы. Витебск - мемориальные доски</h3>
         <div>
             <div class="rowMemorial">
                 <div class="cardMemorial" onclick="openCard(event, 'DmitryVasilievichMyasoedov')">
@@ -6431,7 +6573,7 @@ require_once "request.php";
 
     <div class="tabcontent" id="NamedAfterThem">
         <h3 style="margin-top: 1%; opacity: 80%; background-color: #eaeaea; border: 2px solid #dbdbdb; padding: 0.5%;">
-            Места силы Витебск - "Их именами названы школы"
+            Места силы. Витебск - "Их именами названы школы"
         </h3>
         <div class="SchlsCard">
             <div style="display: flex; justify-content: space-around">
@@ -6490,32 +6632,32 @@ require_once "request.php";
         </div>
 
         <div class="SchlsCard">
-        <div style="display: flex; justify-content: space-around">
-            <div class="card" onclick="openCard(event, 'school-31')">
-                <img alt="" src="Styles/PhotoNamedAfterThem/школа%2031.jpg"
-                     style="width:100%; height: 290px; padding: 1%; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);">
-                <div class="container">
-                    <h4><b>Средняя школа № 31 г. Витебска имени В. З. Хоружей</b></h4>
+            <div style="display: flex; justify-content: space-around">
+                <div class="card" onclick="openCard(event, 'school-31')">
+                    <img alt="" src="Styles/PhotoNamedAfterThem/школа%2031.jpg"
+                         style="width:100%; height: 290px; padding: 1%; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);">
+                    <div class="container">
+                        <h4><b>Средняя школа № 31 г. Витебска имени В. З. Хоружей</b></h4>
+                    </div>
                 </div>
-            </div>
 
-            <div class="card" onclick="openCard(event, 'school-33')">
-                <img alt="" src="Styles/PhotoNamedAfterThem/школа%2033.jpg"
-                     style="width:100%; height: 290px; padding: 1%; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);">
-                <div class="container">
-                    <h4><b>Средняя школа № 33 г. Витебска имени И. Д. Черняховского</b></h4>
+                <div class="card" onclick="openCard(event, 'school-33')">
+                    <img alt="" src="Styles/PhotoNamedAfterThem/школа%2033.jpg"
+                         style="width:100%; height: 290px; padding: 1%; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);">
+                    <div class="container">
+                        <h4><b>Средняя школа № 33 г. Витебска имени И. Д. Черняховского</b></h4>
+                    </div>
                 </div>
-            </div>
 
-            <div class="card" onclick="openCard(event, 'school-40')">
-                <img alt="" src="Styles/PhotoNamedAfterThem/школа%2040.jpg"
-                     style="width:100%; height: 290px; padding: 1%; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);">
-                <div class="container">
-                    <h4><b>Средняя школа № 40 г. Витебска имени М. М. Громова</b></h4>
+                <div class="card" onclick="openCard(event, 'school-40')">
+                    <img alt="" src="Styles/PhotoNamedAfterThem/школа%2040.jpg"
+                         style="width:100%; height: 290px; padding: 1%; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);">
+                    <div class="container">
+                        <h4><b>Средняя школа № 40 г. Витебска имени М. М. Громова</b></h4>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
         <div class="SchlsCard">
             <div style="display: flex; justify-content: space-around">
@@ -6540,6 +6682,45 @@ require_once "request.php";
                          style="width:100%; height: 290px; padding: 1%; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);">
                     <div class="container">
                         <h4><b>Средняя школа № 45 г. Витебска имени В. Ф. Маргелова</b></h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="tabcontent" id="WarGraves">
+        <div class="warGravesCard">
+            <div style="display: flex; justify-content: space-around">
+                <div class="card" onclick="openCard(event, 'graves-1')">
+                    <img alt="" src="Styles/PhotoWarGraves/1%20Воинское%20кладбище.jpg"
+                         style="width:100%; height: 290px; padding: 1%; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);">
+                    <div class="container">
+                        <h4><b>Воинское кладбище</b></h4>
+                        <p>
+                            г. Витебск, ул. Советская.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card" onclick="openCard(event, 'graves-2')">
+                    <img alt="" src="Styles/PhotoWarGraves/2.jpg"
+                         style="width:100%; height: 290px; padding: 1%; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);">
+                    <div class="container">
+                        <h4><b>Воинский участок кладбища</b></h4>
+                        <p>
+                            г. Витебск, ул. 3-я Линия (гражданское кладбище «Песковатинское»).
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card" onclick="openCard(event, 'graves-3')">
+                    <img alt="" src="Styles/PhotoWarGraves/3%20Воинский%20участок%20кладбища.jpg"
+                         style="width:100%; height: 290px; padding: 1%; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);">
+                    <div class="container">
+                        <h4><b>Воинский участок кладбища</b></h4>
+                        <p>
+                            г. Витебск, ул. Сенненская (гражданское кладбище «Луческое»).
+                        </p>
                     </div>
                 </div>
             </div>
