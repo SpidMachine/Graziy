@@ -10,6 +10,13 @@
   <component name="ComposerSettings">
     <execution />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -87,6 +94,7 @@
       <workItem from="1617791895530" duration="1373000" />
       <workItem from="1617859671798" duration="7698000" />
       <workItem from="1617947171910" duration="28424000" />
+      <workItem from="1618550170839" duration="9084000" />
     </task>
     <servers />
   </component>
@@ -98,8 +106,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/html.html</url>
-          <line>6832</line>
-          <properties lambdaOrdinal="-1" />
+          <line>7151</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>

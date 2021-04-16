@@ -12,8 +12,6 @@
     box-shadow: 0 0 27px rgb(0 0 0 / 20%);
     border: 1px solid #ccc;
     margin-bottom: 5%;
-    /*font-family: Arial, sans-serif;*/
-    animation: anim-opacity 450ms forwards;
 }
 
 .mainBottomPadLeft {
@@ -77,9 +75,6 @@
 
 /* Style the tab content */
 .tabcontent input {
-    padding: 1%;
-    margin-left: 2%;
-    margin-top: 2%;
     box-shadow: 0 0 27px rgb(0 0 0 / 20%);
     background-color: #d7d7d7;
     -webkit-transition: all 0.3s ease;
@@ -125,20 +120,28 @@ body {
     border-top: none;
 }
 
-.tabcontent-secContent h3 {
-    animation: anim-opacity 350ms forwards;
+#warGravesAnim-1 {
+    animation: anim-opacityLeftToRight 350ms forwards;
 }
 
-.img-v-nazvaniyah-pamyat-zhivet-part2 {
-    animation: anim-opacity 450ms forwards;
+#warGravesAnim-2 {
+    animation: anim-opacityRightToLeft 350ms forwards;
+}
+
+#warGravesAnim-3 {
+    animation: anim-opacityLeftToRight 350ms forwards;
+}
+
+.tabcontent-secContent h3 {
+    animation: anim-opacityLeftToRight 350ms forwards;
 }
 
 .part3 {
-    animation: anim-opacity 480ms forwards;
+    animation: anim-opacityLeftToRight 480ms forwards;
 }
 
 .part4 {
-    animation: anim-opacity 530ms forwards;
+    animation: anim-opacityLeftToRight 530ms forwards;
 }
 
 .tabcontent {
@@ -408,17 +411,15 @@ body {
     margin-top: 1%;
 }
 
-#comeBack {
-    padding: 1%;
-    margin-left: 2%;
-    margin-top: 2%;
-    box-shadow: 0 0 27px rgb(0 0 0 / 20%);
-    background-color: #d7d7d7;
-    -webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-    transition: all 0.3s ease;
-}
+/*#comeBack {*/
+/*    padding: 1%;*/
+/*    box-shadow: 0 0 27px rgb(0 0 0 / 20%);*/
+/*    background-color: #d7d7d7;*/
+/*    -webkit-transition: all 0.3s ease;*/
+/*    -moz-transition: all 0.3s ease;*/
+/*    -o-transition: all 0.3s ease;*/
+/*    transition: all 0.3s ease;*/
+/*}*/
 
 #comeBack:hover {
     background: #c1c1c1;
@@ -473,16 +474,6 @@ body {
     color: black;
 }
 
-@keyframes touch-upper {
-    0% {
-        transform: translateY(100%);
-    }
-
-    100% {
-        transform: translateY(100%);
-    }
-}
-
 @keyframes tab-click {
     0% {
         transform: translateY(150%);
@@ -499,17 +490,37 @@ body {
     }
 }
 
-@keyframes anim-opacity {
+@keyframes anim-opacityRightToLeft {
     0% {
         opacity: 0;
+        transform: translateX(100%);
     }
 
     50% {
         opacity: 50%;
+        transform: translateX(50%);
     }
 
     100% {
         opacity: 100%;
+        transform: translateX(0%);
+    }
+}
+
+@keyframes anim-opacityLeftToRight {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+
+    50% {
+        opacity: 50%;
+        transform: translateX(-50%);
+    }
+
+    100% {
+        opacity: 100%;
+        transform: translateX(0%);
     }
 }
 

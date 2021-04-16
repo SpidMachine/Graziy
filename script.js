@@ -102,12 +102,3 @@ window.onclick = function(event) {
         }
     }
 }
-
-function backToTabContent() {
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-    }
-
-
-}

@@ -11,6 +11,7 @@ require_once "request.php";
     <meta content="ie=edge" http-equiv="X-UA-Compatible">
     <title>Document</title>
     <link href="Styles/Style.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
 
@@ -36,23 +37,26 @@ require_once "request.php";
             </div>
         </div>
         <button class="tablinks" name="Memorials" onclick="openTab(event, 'Memorials')">Квест-игры</button>
-
         <a href="https://forms.gle/bDQtAER6EuqUWtvd7" id="alert">
             <button class="tablinks" name="Memorials">
                 Проверь себя
             </button>
         </a>
+        <button class="tablinks" name="AboutProject" onclick="openTab(event, 'AboutProject')">О проекте
+        </button>
     </div>
 
     <!-- Tab content -->
     <div class="tabcontent" id="Main">
-        <div class="tabcontent-secContent-part1">
+        <div data-aos="fade-up">
             <h3 style="margin-top: 1%; opacity: 80%; background-color: #eaeaea; border: 2px solid #dbdbdb; padding: 0.5%;">
                 Главная</h3>
-            <div class="img-v-nazvaniyah-pamyat-zhivet-part2" style="display: flex; justify-content: center;">
+            <div data-aos="fade-up" data-aos-duration="500" style="display: flex; justify-content:
+             center;">
                 <img alt="" src="material/v-nazvaniyah-pamyat-zhivet.jpg" style="border: 1px solid black">
             </div>
-            <p class="part3"><span style="margin-left: 3%">Гуляя</span> по городу, мы читаем на домах названия улиц и
+            <p data-aos="fade-up" data-aos-duration="600"><span style="margin-left: 3%">Гуляя
+            </span> по городу, мы читаем на домах названия улиц и
                 переулков, но
                 редко
                 задумываемся, почему они так названы. <br>
@@ -64,7 +68,7 @@ require_once "request.php";
                 освобождения Витебской области от немецко-фашистских захватчиков советские воины совершили немало
                 героических подвигов. Город, как и люди, помнит тех, кто боролся за его свободу. Их имена увековечены в
                 названиях улиц, аллей, проспектов и площадей.</p>
-            <div class="mainBottom">
+            <div class="mainBottom" data-aos="fade-up" data-aos-duration="700">
                 <div style="padding: 1%; display: flex; align-items: baseline">
                     <img alt="" class="mainBottomPadLeft" src="material/FondMira.jpg"
                          style="width: 10%; padding-right: -10%">
@@ -73,7 +77,7 @@ require_once "request.php";
                 </div>
             </div>
 
-            <p class="part4" style="text-align: center">
+            <p data-aos="fade-up" data-aos-duration="800" style="text-align: center">
                 <strong>Улицы Витебска</strong><br>
 
                 <i>Спешат и торопятся улицы двинские. <br>
@@ -101,7 +105,7 @@ require_once "request.php";
     <!-------------------------------------------------------Card content-->
     <span>
         <div class="tabcontent" id="st-26-Ijuna">
-            <input type="button" class="tablinks" onclick="openTab(event, 'Streets')" name="Streets"
+            <input class="tablinks" name="Streets" onclick="openTab(event, 'Streets')" type="button"
                    value="<< Вернуться">
             <div class="openedCardDiv">
                 <div class="image__wrapper">
@@ -152,7 +156,7 @@ require_once "request.php";
         </div>
 
         <div class="tabcontent" id="st-39-armii">
-            <input type="button" class="tablinks" onclick="openTab(event, 'Streets')" name="Streets"
+            <input class="tablinks" name="Streets" onclick="openTab(event, 'Streets')" type="button"
                    value="<< Вернуться">
             <div class="openedCardDiv">
                 <div class="image__wrapper">
@@ -208,7 +212,8 @@ require_once "request.php";
         </div>
 
         <div class="tabcontent" id="st-33-armii">
-            <input type="button" class="tablinks" onclick="openTab(event, 'Streets')" name="Streets" value="<< Вернуться">
+            <input class="tablinks" name="Streets" onclick="openTab(event, 'Streets')" type="button"
+                   value="<< Вернуться">
             <div class="openedCardDiv">
                 <div class="image__wrapper">
                     <img alt="" class="minimized" src="material/st-33-armii.jpg">
@@ -288,7 +293,8 @@ require_once "request.php";
         </div>
 
         <div class="tabcontent" id="st-43-armii">
-            <input type="button" class="tablinks" onclick="openTab(event, 'Streets')" name="Streets" value="<< Вернуться">
+            <input class="tablinks" name="Streets" onclick="openTab(event, 'Streets')" type="button"
+                   value="<< Вернуться">
             <div class="openedCardDiv">
                 <div class="strDiscript">
                     <h4><b>Улица 43-й Армии</b></h4>
@@ -367,7 +373,8 @@ require_once "request.php";
         </div>
 
         <div class="tabcontent" id="st-Bagramyana">
-            <input type="button" class="tablinks" onclick="openTab(event, 'Streets')" name="Streets" value="<< Вернуться">
+            <input class="tablinks" name="Streets" onclick="openTab(event, 'Streets')" type="button"
+                   value="<< Вернуться">
             <div class="openedCardDiv">
                 <div class="image__wrapper">
                     <img alt="" class="minimized" src="material/st-Bagramyana.jpg">
@@ -480,7 +487,8 @@ require_once "request.php";
         </div>
 
         <div class="tabcontent" id="most-Bloxina">
-            <input type="button" class="tablinks" onclick="openTab(event, 'Streets')" name="Streets" value="<< Вернуться">
+            <input class="tablinks" name="Streets" onclick="openTab(event, 'Streets')" type="button"
+                   value="<< Вернуться">
             <div class="openedCardDiv">
                 <div class="strDiscript">
                     <h4><b>Мост Блохина</b></h4>
@@ -591,7 +599,8 @@ require_once "request.php";
         </div>
 
         <div class="tabcontent" id="st-Beloxvostika">
-            <input type="button" class="tablinks" onclick="openTab(event, 'Streets')" name="Streets" value="<< Вернуться">
+            <input class="tablinks" name="Streets" onclick="openTab(event, 'Streets')" type="button"
+                   value="<< Вернуться">
             <div class="openedCardDiv">
                 <div class="strDiscript">
                     <h4><b>Улица Белохвостикова</b></h4>
@@ -687,7 +696,8 @@ require_once "request.php";
         </div>
 
         <div class="tabcontent" id="st-Bumagina">
-            <input type="button" class="tablinks" onclick="openTab(event, 'Streets')" name="Streets" value="<< Вернуться">
+            <input class="tablinks" name="Streets" onclick="openTab(event, 'Streets')" type="button"
+                   value="<< Вернуться">
             <div class="openedCardDiv">
                 <div class="strDiscript">
                     <h4><b>Улица Бумагина</b></h4>
@@ -794,7 +804,8 @@ require_once "request.php";
         </div>
 
         <div class="tabcontent" id="st-Vatutin">
-            <input type="button" class="tablinks" onclick="openTab(event, 'Streets')" name="Streets" value="<< Вернуться">
+            <input class="tablinks" name="Streets" onclick="openTab(event, 'Streets')" type="button"
+                   value="<< Вернуться">
             <div class="openedCardDiv">
                 <div class="strDiscript">
                     <h4><b>Улица Ватутина</b></h4>
@@ -880,7 +891,8 @@ require_once "request.php";
         </div>
 
         <div class="tabcontent" id="st-Vinogradovoy">
-            <input type="button" class="tablinks" onclick="openTab(event, 'Streets')" name="Streets" value="<< Вернуться">
+            <input class="tablinks" name="Streets" onclick="openTab(event, 'Streets')" type="button"
+                   value="<< Вернуться">
             <div class="openedCardDiv">
                 <div class="strDiscript">
                     <h4><b>Улица Виноградовой</b></h4>
@@ -953,7 +965,8 @@ require_once "request.php";
         </div>
 
         <div class="tabcontent" id="st-Vera_Xoruzh">
-            <input type="button" class="tablinks" onclick="openTab(event, 'Streets')" name="Streets" value="<< Вернуться">
+            <input class="tablinks" name="Streets" onclick="openTab(event, 'Streets')" type="button"
+                   value="<< Вернуться">
             <div class="openedCardDiv">
                 <div class="strDiscript">
                     <h4><b>Улица Веры Хоружей</b></h4>
@@ -1037,7 +1050,8 @@ require_once "request.php";
         </div>
 
         <div class="tabcontent" id="st-Gastello">
-            <input type="button" class="tablinks" onclick="openTab(event, 'Streets')" name="Streets" value="<< Вернуться">
+            <input class="tablinks" name="Streets" onclick="openTab(event, 'Streets')" type="button"
+                   value="<< Вернуться">
             <div class="openedCardDiv">
                 <div class="strDiscript">
                     <h4><b>Улица Гастелло</b></h4>
@@ -1114,7 +1128,8 @@ require_once "request.php";
         </div>
 
         <div class="tabcontent" id="st-Ludnikova">
-            <input type="button" class="tablinks" onclick="openTab(event, 'Streets')" name="Streets" value="<< Вернуться">
+            <input class="tablinks" name="Streets" onclick="openTab(event, 'Streets')" type="button"
+                   value="<< Вернуться">
             <div class="openedCardDiv">
                 <div class="strDiscript">
                     <h4><b>Проспект Генерала Людникова</b></h4>
@@ -1225,7 +1240,8 @@ require_once "request.php";
         </div>
 
         <div class="tabcontent" id="st-Beloborodova">
-            <input type="button" class="tablinks" onclick="openTab(event, 'Streets')" name="Streets" value="<< Вернуться">
+            <input class="tablinks" name="Streets" onclick="openTab(event, 'Streets')" type="button"
+                   value="<< Вернуться">
             <div class="openedCardDiv">
                 <div class="strDiscript">
                     <h4><b>Улица Генерала Белобородова</b></h4>
@@ -1330,7 +1346,8 @@ require_once "request.php";
         </div>
 
         <div class="tabcontent" id="st-Gorovtsa">
-            <input type="button" class="tablinks" onclick="openTab(event, 'Streets')" name="Streets" value="<< Вернуться">
+            <input class="tablinks" name="Streets" onclick="openTab(event, 'Streets')" type="button"
+                   value="<< Вернуться">
             <div class="openedCardDiv">
                 <div class="strDiscript">
                     <h4><b>Улица Горовца</b></h4>
@@ -1430,7 +1447,8 @@ require_once "request.php";
         </div>
 
         <div class="tabcontent" id="st-g-Ivanovskogo">
-            <input type="button" class="tablinks" onclick="openTab(event, 'Streets')" name="Streets" value="<< Вернуться">
+            <input class="tablinks" name="Streets" onclick="openTab(event, 'Streets')" type="button"
+                   value="<< Вернуться">
             <div class="openedCardDiv">
                 <div class="strDiscript">
                     <h4><b>Улица Генерала Ивановского</b></h4>
@@ -1567,7 +1585,8 @@ require_once "request.php";
         </div>
 
         <div class="tabcontent" id="st-Gromova">
-            <input type="button" class="tablinks" onclick="openTab(event, 'Streets')" name="Streets" value="<< Вернуться">
+            <input class="tablinks" name="Streets" onclick="openTab(event, 'Streets')" type="button"
+                   value="<< Вернуться">
             <div class="openedCardDiv">
                 <div class="strDiscript">
                     <h4><b>Улица Громова</b></h4>
@@ -1638,7 +1657,8 @@ require_once "request.php";
         </div>
 
         <div class="tabcontent" id="st-g-Donukalov-AF">
-            <input type="button" class="tablinks" onclick="openTab(event, 'Streets')" name="Streets" value="<< Вернуться">
+            <input class="tablinks" name="Streets" onclick="openTab(event, 'Streets')" type="button"
+                   value="<< Вернуться">
             <div class="openedCardDiv">
                 <div class="strDiscript">
                     <h4><b>Улица Данукалова</b></h4>
@@ -1708,7 +1728,8 @@ require_once "request.php";
         </div>
 
         <div class="tabcontent" id="st-Dovatora">
-            <input type="button" class="tablinks" onclick="openTab(event, 'Streets')" name="Streets" value="<< Вернуться">
+            <input class="tablinks" name="Streets" onclick="openTab(event, 'Streets')" type="button"
+                   value="<< Вернуться">
             <div class="openedCardDiv">
                 <div class="strDiscript">
                     <h4><b>Улица Доватора</b></h4>
@@ -1789,7 +1810,8 @@ require_once "request.php";
         </div>
 
         <div class="tabcontent" id="st-Zheatkova">
-            <input type="button" class="tablinks" onclick="openTab(event, 'Streets')" name="Streets" value="<< Вернуться">
+            <input class="tablinks" name="Streets" onclick="openTab(event, 'Streets')" type="button"
+                   value="<< Вернуться">
             <div class="openedCardDiv">
                 <div class="strDiscript">
                     <h4><b>Улица Жесткова</b></h4>
@@ -1864,7 +1886,8 @@ require_once "request.php";
         </div>
 
         <div class="tabcontent" id="st-Zaslonova">
-            <input type="button" class="tablinks" onclick="openTab(event, 'Streets')" name="Streets" value="<< Вернуться">
+            <input class="tablinks" name="Streets" onclick="openTab(event, 'Streets')" type="button"
+                   value="<< Вернуться">
             <div class="openedCardDiv">
                 <div class="strDiscript">
                     <h4><b>Улица Заслонова</b></h4>
@@ -1980,7 +2003,8 @@ require_once "request.php";
         </div>
 
         <div class="tabcontent" id="st-Zenkovoj">
-            <input type="button" class="tablinks" onclick="openTab(event, 'Streets')" name="Streets" value="<< Вернуться">
+            <input class="tablinks" name="Streets" onclick="openTab(event, 'Streets')" type="button"
+                   value="<< Вернуться">
             <div class="openedCardDiv">
                 <div class="strDiscript">
                     <h4><b>Улица Зеньковой</b></h4>
@@ -2081,7 +2105,8 @@ require_once "request.php";
         </div>
 
         <div class="tabcontent" id="st-Knyazev">
-            <input type="button" class="tablinks" onclick="openTab(event, 'Streets')" name="Streets" value="<< Вернуться">
+            <input class="tablinks" name="Streets" onclick="openTab(event, 'Streets')" type="button"
+                   value="<< Вернуться">
             <div class="openedCardDiv">
                 <div class="strDiscript">
                     <h4><b>Улица Князева</b></h4>
@@ -2162,7 +2187,8 @@ require_once "request.php";
         </div>
 
         <div class="tabcontent" id="st-Kondratieva">
-            <input type="button" class="tablinks" onclick="openTab(event, 'Streets')" name="Streets" value="<< Вернуться">
+            <input class="tablinks" name="Streets" onclick="openTab(event, 'Streets')" type="button"
+                   value="<< Вернуться">
             <div class="openedCardDiv">
                 <div class="strDiscript">
                     <h4><b>Улица Кондратьева</b></h4>
@@ -2257,7 +2283,8 @@ require_once "request.php";
         </div>
 
         <div class="tabcontent" id="st-Kolcova">
-            <input type="button" class="tablinks" onclick="openTab(event, 'Streets')" name="Streets" value="<< Вернуться">
+            <input class="tablinks" name="Streets" onclick="openTab(event, 'Streets')" type="button"
+                   value="<< Вернуться">
             <div class="openedCardDiv">
                 <div class="strDiscript">
                     <h4><b>Переулок Кольцова</b></h4>
@@ -2349,7 +2376,8 @@ require_once "request.php";
         </div>
 
         <div class="tabcontent" id="st-RedPartizan">
-            <input type="button" class="tablinks" onclick="openTab(event, 'Streets')" name="Streets" value="<< Вернуться">
+            <input class="tablinks" name="Streets" onclick="openTab(event, 'Streets')" type="button"
+                   value="<< Вернуться">
             <div class="openedCardDiv">
                 <div class="strDiscript">
                     <h4><b>Улица Красного Партизана</b></h4>
@@ -2468,7 +2496,8 @@ require_once "request.php";
         </div>
 
         <div class="tabcontent" id="st-Leonova">
-            <input type="button" class="tablinks" onclick="openTab(event, 'Streets')" name="Streets" value="<< Вернуться">
+            <input class="tablinks" name="Streets" onclick="openTab(event, 'Streets')" type="button"
+                   value="<< Вернуться">
             <div class="openedCardDiv">
                 <div class="strDiscript">
                     <h4><b>Улица Леонова</b></h4>
@@ -2551,7 +2580,8 @@ require_once "request.php";
         </div>
 
         <div class="tabcontent" id="st-Maskaev">
-            <input type="button" class="tablinks" onclick="openTab(event, 'Streets')" name="Streets" value="<< Вернуться">
+            <input class="tablinks" name="Streets" onclick="openTab(event, 'Streets')" type="button"
+                   value="<< Вернуться">
             <div class="openedCardDiv">
                 <div class="strDiscript">
                     <h4><b>Улица Маскаева</b></h4>
@@ -2637,7 +2667,8 @@ require_once "request.php";
         </div>
 
         <div class="tabcontent" id="st-MyasoEd">
-            <input type="button" class="tablinks" onclick="openTab(event, 'Streets')" name="Streets" value="<< Вернуться">
+            <input class="tablinks" name="Streets" onclick="openTab(event, 'Streets')" type="button"
+                   value="<< Вернуться">
             <div class="openedCardDiv">
                 <div class="strDiscript">
                     <h4><b>Улица Мясоедова</b></h4>
@@ -2710,7 +2741,8 @@ require_once "request.php";
         </div>
 
         <div class="tabcontent" id="st-Pobeda">
-            <input type="button" class="tablinks" onclick="openTab(event, 'Streets')" name="Streets" value="<< Вернуться">
+            <input class="tablinks" name="Streets" onclick="openTab(event, 'Streets')" type="button"
+                   value="<< Вернуться">
             <div class="openedCardDiv">
                 <div class="strDiscript">
                     <h4><b>Площадь Победы</b></h4>
@@ -2843,7 +2875,8 @@ require_once "request.php";
         </div>
 
         <div class="tabcontent" id="st-Pobedy-prospekt-2">
-            <input type="button" class="tablinks" onclick="openTab(event, 'Streets')" name="Streets" value="<< Вернуться">
+            <input class="tablinks" name="Streets" onclick="openTab(event, 'Streets')" type="button"
+                   value="<< Вернуться">
             <div class="openedCardDiv">
                 <div class="strDiscript">
                     <h4><b>Проспект Победы</b></h4>
@@ -2912,7 +2945,8 @@ require_once "request.php";
         </div>
 
         <div class="tabcontent" id="st-Portnovoj">
-            <input type="button" class="tablinks" onclick="openTab(event, 'Streets')" name="Streets" value="<< Вернуться">
+            <input class="tablinks" name="Streets" onclick="openTab(event, 'Streets')" type="button"
+                   value="<< Вернуться">
             <div class="openedCardDiv">
                 <div class="strDiscript">
                     <h4><b>Улица Портновой</b></h4>
@@ -3015,7 +3049,8 @@ require_once "request.php";
         </div>
 
         <div class="tabcontent" id="st-Svechechkiniux">
-            <input type="button" class="tablinks" onclick="openTab(event, 'Streets')" name="Streets" value="<< Вернуться">
+            <input class="tablinks" name="Streets" onclick="openTab(event, 'Streets')" type="button"
+                   value="<< Вернуться">
             <div class="openedCardDiv">
                 <div class="strDiscript">
                     <h4><b>Улица Свечкиных</b></h4>
@@ -3114,7 +3149,8 @@ require_once "request.php";
         </div>
 
         <div class="tabcontent" id="st-Smetanina">
-            <input type="button" class="tablinks" onclick="openTab(event, 'Streets')" name="Streets" value="<< Вернуться">
+            <input class="tablinks" name="Streets" onclick="openTab(event, 'Streets')" type="button"
+                   value="<< Вернуться">
             <div class="openedCardDiv">
                 <div class="strDiscript">
                     <h4><b>Улица Сметанина</b></h4>
@@ -3213,7 +3249,8 @@ require_once "request.php";
         </div>
 
         <div class="tabcontent" id="st-Svidinskogo">
-            <input type="button" class="tablinks" onclick="openTab(event, 'Streets')" name="Streets" value="<< Вернуться">
+            <input class="tablinks" name="Streets" onclick="openTab(event, 'Streets')" type="button"
+                   value="<< Вернуться">
             <div class="openedCardDiv">
                 <div class="strDiscript">
                     <h4><b>Улица Свидинского</b></h4>
@@ -3295,7 +3332,8 @@ require_once "request.php";
         </div>
 
         <div class="tabcontent" id="st-pankova">
-            <input type="button" class="tablinks" onclick="openTab(event, 'Streets')" name="Streets" value="<< Вернуться">
+            <input class="tablinks" name="Streets" onclick="openTab(event, 'Streets')" type="button"
+                   value="<< Вернуться">
             <div class="openedCardDiv">
                 <div class="strDiscript">
                     <h4><b>Улица Софьи Панковой</b></h4>
@@ -3388,7 +3426,8 @@ require_once "request.php";
         </div>
 
         <div class="tabcontent" id="st-Sivakova">
-            <input type="button" class="tablinks" onclick="openTab(event, 'Streets')" name="Streets" value="<< Вернуться">
+            <input class="tablinks" name="Streets" onclick="openTab(event, 'Streets')" type="button"
+                   value="<< Вернуться">
             <div class="openedCardDiv">
                 <div class="strDiscript">
                     <h4><b>Улица Сивакова</b></h4>
@@ -3476,7 +3515,8 @@ require_once "request.php";
         </div>
 
         <div class="tabcontent" id="st-Stepanenko">
-            <input type="button" class="tablinks" onclick="openTab(event, 'Streets')" name="Streets" value="<< Вернуться">
+            <input class="tablinks" name="Streets" onclick="openTab(event, 'Streets')" type="button"
+                   value="<< Вернуться">
             <div class="openedCardDiv">
                 <div class="strDiscript">
                     <h4><b>Улица Степаненко</b></h4>
@@ -3548,7 +3588,8 @@ require_once "request.php";
         </div>
 
         <div class="tabcontent" id="st-Silickogo">
-            <input type="button" class="tablinks" onclick="openTab(event, 'Streets')" name="Streets" value="<< Вернуться">
+            <input class="tablinks" name="Streets" onclick="openTab(event, 'Streets')" type="button"
+                   value="<< Вернуться">
             <div class="openedCardDiv">
                 <div class="strDiscript">
                     <h4><b>Улица Сильницкого</b></h4>
@@ -3635,7 +3676,8 @@ require_once "request.php";
         </div>
 
         <div class="tabcontent" id="st-Supruna">
-            <input type="button" class="tablinks" onclick="openTab(event, 'Streets')" name="Streets" value="<< Вернуться">
+            <input class="tablinks" name="Streets" onclick="openTab(event, 'Streets')" type="button"
+                   value="<< Вернуться">
             <div class="openedCardDiv">
                 <div class="strDiscript">
                     <h4><b>Улица Супруна</b></h4>
@@ -3706,7 +3748,8 @@ require_once "request.php";
         </div>
 
         <div class="tabcontent" id="st-Calikova">
-            <input type="button" class="tablinks" onclick="openTab(event, 'Streets')" name="Streets" value="<< Вернуться">
+            <input class="tablinks" name="Streets" onclick="openTab(event, 'Streets')" type="button"
+                   value="<< Вернуться">
             <div class="openedCardDiv">
                 <div class="strDiscript">
                     <h4><b>Улица Цаликова</b></h4>
@@ -3791,7 +3834,8 @@ require_once "request.php";
         </div>
 
         <div class="tabcontent" id="st-Chernyahovskogo">
-            <input type="button" class="tablinks" onclick="openTab(event, 'Streets')" name="Streets" value="<< Вернуться">
+            <input class="tablinks" name="Streets" onclick="openTab(event, 'Streets')" type="button"
+                   value="<< Вернуться">
             <div class="openedCardDiv">
                 <div class="strDiscript">
                     <h4><b>Проспект Черняховского</b></h4>
@@ -3890,7 +3934,8 @@ require_once "request.php";
         </div>
 
         <div class="tabcontent" id="st-Shmyreva">
-            <input type="button" class="tablinks" onclick="openTab(event, 'Streets')" name="Streets" value="<< Вернуться">
+            <input class="tablinks" name="Streets" onclick="openTab(event, 'Streets')" type="button"
+                   value="<< Вернуться">
             <div class="openedCardDiv">
                 <div class="strDiscript">
                     <h4><b>Улица Шмырёва</b></h4>
@@ -4002,7 +4047,8 @@ require_once "request.php";
         </div>
 
         <div class="tabcontent" id="st-Shradera">
-            <input type="button" class="tablinks" onclick="openTab(event, 'Streets')" name="Streets" value="<< Вернуться">
+            <input class="tablinks" name="Streets" onclick="openTab(event, 'Streets')" type="button"
+                   value="<< Вернуться">
             <div class="openedCardDiv">
                 <div class="strDiscript">
                     <h4><b>Улица Шрадера</b></h4>
@@ -4068,7 +4114,8 @@ require_once "request.php";
         </div>
 
         <div class="tabcontent" id="st-Yanushovskogo">
-            <input type="button" class="tablinks" onclick="openTab(event, 'Streets')" name="Streets" value="<< Вернуться">
+            <input class="tablinks" name="Streets" onclick="openTab(event, 'Streets')" type="button"
+                   value="<< Вернуться">
             <div class="openedCardDiv">
                 <div class="strDiscript">
                     <h4><b>Улица Янушковского</b></h4>
@@ -4799,7 +4846,7 @@ require_once "request.php";
 
     <span>
         <div class="tabcontent" id="gimn-5">
-            <input type="button" class="tablinks" onclick="openTab(event, 'NamedAfterThem')" name="NamedAfterThem"
+            <input class="tablinks" name="NamedAfterThem" onclick="openTab(event, 'NamedAfterThem')" type="button"
                    value="<< Вернуться">
             <div>
                 <div style="display: flex">
@@ -4879,7 +4926,7 @@ require_once "request.php";
         </div>
 
         <div class="tabcontent" id="gimn-9">
-            <input type="button" class="tablinks" onclick="openTab(event, 'NamedAfterThem')" name="NamedAfterThem"
+            <input class="tablinks" name="NamedAfterThem" onclick="openTab(event, 'NamedAfterThem')" type="button"
                    value="<< Вернуться">
             <div>
                 <div style="display: flex">
@@ -4918,7 +4965,7 @@ require_once "request.php";
         </div>
 
         <div class="tabcontent" id="school-12">
-            <input type="button" class="tablinks" onclick="openTab(event, 'NamedAfterThem')" name="NamedAfterThem"
+            <input class="tablinks" name="NamedAfterThem" onclick="openTab(event, 'NamedAfterThem')" type="button"
                    value="<< Вернуться">
             <div>
                 <div style="display: flex">
@@ -4984,7 +5031,7 @@ require_once "request.php";
         </div>
 
         <div class="tabcontent" id="school-16">
-            <input type="button" class="tablinks" onclick="openTab(event, 'NamedAfterThem')" name="NamedAfterThem"
+            <input class="tablinks" name="NamedAfterThem" onclick="openTab(event, 'NamedAfterThem')" type="button"
                    value="<< Вернуться">
             <div>
                 <div style="display: flex">
@@ -5027,7 +5074,7 @@ require_once "request.php";
         </div>
 
         <div class="tabcontent" id="school-21">
-            <input type="button" class="tablinks" onclick="openTab(event, 'NamedAfterThem')" name="NamedAfterThem"
+            <input class="tablinks" name="NamedAfterThem" onclick="openTab(event, 'NamedAfterThem')" type="button"
                    value="<< Вернуться">
             <div>
                 <div style="display: flex">
@@ -5061,7 +5108,7 @@ require_once "request.php";
         </div>
 
         <div class="tabcontent" id="school-24">
-            <input type="button" class="tablinks" onclick="openTab(event, 'NamedAfterThem')" name="NamedAfterThem"
+            <input class="tablinks" name="NamedAfterThem" onclick="openTab(event, 'NamedAfterThem')" type="button"
                    value="<< Вернуться">
             <div>
                 <div style="display: flex">
@@ -5101,7 +5148,7 @@ require_once "request.php";
         </div>
 
         <div class="tabcontent" id="school-31">
-            <input type="button" class="tablinks" onclick="openTab(event, 'NamedAfterThem')" name="NamedAfterThem"
+            <input class="tablinks" name="NamedAfterThem" onclick="openTab(event, 'NamedAfterThem')" type="button"
                    value="<< Вернуться">
             <div>
                 <div style="display: flex">
@@ -5202,7 +5249,7 @@ require_once "request.php";
         </div>
 
         <div class="tabcontent" id="school-33">
-            <input type="button" class="tablinks" onclick="openTab(event, 'NamedAfterThem')" name="NamedAfterThem"
+            <input class="tablinks" name="NamedAfterThem" onclick="openTab(event, 'NamedAfterThem')" type="button"
                    value="<< Вернуться">
             <div>
                 <div style="display: flex">
@@ -5250,7 +5297,7 @@ require_once "request.php";
         </div>
 
         <div class="tabcontent" id="school-40">
-            <input type="button" class="tablinks" onclick="openTab(event, 'NamedAfterThem')" name="NamedAfterThem"
+            <input class="tablinks" name="NamedAfterThem" onclick="openTab(event, 'NamedAfterThem')" type="button"
                    value="<< Вернуться">
             <div>
                 <div style="display: flex">
@@ -5397,7 +5444,7 @@ require_once "request.php";
         </div>
 
         <div class="tabcontent" id="school-42">
-            <input type="button" class="tablinks" onclick="openTab(event, 'NamedAfterThem')" name="NamedAfterThem"
+            <input class="tablinks" name="NamedAfterThem" onclick="openTab(event, 'NamedAfterThem')" type="button"
                    value="<< Вернуться">
             <div>
                 <div style="display: flex">
@@ -5488,7 +5535,7 @@ require_once "request.php";
         </div>
 
         <div class="tabcontent" id="school-43">
-            <input type="button" class="tablinks" onclick="openTab(event, 'NamedAfterThem')" name="NamedAfterThem"
+            <input class="tablinks" name="NamedAfterThem" onclick="openTab(event, 'NamedAfterThem')" type="button"
                    value="<< Вернуться">
             <div>
                 <div style="display: flex">
@@ -5597,7 +5644,7 @@ require_once "request.php";
         </div>
 
         <div class="tabcontent" id="school-45">
-            <input type="button" class="tablinks" onclick="openTab(event, 'NamedAfterThem')" name="NamedAfterThem"
+            <input class="tablinks" name="NamedAfterThem" onclick="openTab(event, 'NamedAfterThem')" type="button"
                    value="<< Вернуться">
             <div>
                 <div style="display: flex">
@@ -5673,7 +5720,7 @@ require_once "request.php";
         </div>
 
         <div class="tabcontent" id="school-46">
-            <input type="button" class="tablinks" onclick="openTab(event, 'NamedAfterThem')" name="NamedAfterThem"
+            <input class="tablinks" name="NamedAfterThem" onclick="openTab(event, 'NamedAfterThem')" type="button"
                    value="<< Вернуться">
             <div>
                 <div style="display: flex">
@@ -5776,7 +5823,7 @@ require_once "request.php";
         </div>
 
         <div class="tabcontent" id="school-47">
-            <input type="button" class="tablinks" onclick="openTab(event, 'NamedAfterThem')" name="NamedAfterThem"
+            <input class="tablinks" name="NamedAfterThem" onclick="openTab(event, 'NamedAfterThem')" type="button"
                    value="<< Вернуться">
             <div>
                 <div style="display: flex">
@@ -5868,7 +5915,7 @@ require_once "request.php";
 
     <span>
         <div class="tabcontent" id="graves-1">
-            <input type="button" class="tablinks" onclick="openTab(event, 'WarGraves')" name="WarGraves"
+            <input class="tablinks" name="WarGraves" onclick="openTab(event, 'WarGraves')" type="button"
                    value="<< Вернуться">
              <div class="strDiscript">
                     <h4><b>Воинское кладбище</b></h4>
@@ -5896,7 +5943,7 @@ require_once "request.php";
         </div>
 
         <div class="tabcontent" id="graves-2">
-                        <input type="button" class="tablinks" onclick="openTab(event, 'WarGraves')" name="WarGraves"
+                        <input class="tablinks" name="WarGraves" onclick="openTab(event, 'WarGraves')" type="button"
                                value="<< Вернуться">
              <div class="strDiscript">
                     <h4><b>Воинское кладбище</b></h4>
@@ -5924,7 +5971,7 @@ require_once "request.php";
         </div>
 
         <div class="tabcontent" id="graves-3">
-                        <input type="button" class="tablinks" onclick="openTab(event, 'WarGraves')" name="WarGraves"
+                        <input class="tablinks" name="WarGraves" onclick="openTab(event, 'WarGraves')" type="button"
                                value="<< Вернуться">
              <div class="strDiscript">
                     <h4><b>Воинский участок кладбища</b></h4>
@@ -5957,7 +6004,7 @@ require_once "request.php";
         </div>
 
         <div class="tabcontent" id="graves-4">
-                        <input type="button" class="tablinks" onclick="openTab(event, 'WarGraves')" name="WarGraves"
+                        <input class="tablinks" name="WarGraves" onclick="openTab(event, 'WarGraves')" type="button"
                                value="<< Вернуться">
              <div class="strDiscript">
                     <h4><b>Братская могила</b></h4>
@@ -5987,7 +6034,7 @@ require_once "request.php";
         </div>
 
         <div class="tabcontent" id="graves-5">
-                        <input type="button" class="tablinks" onclick="openTab(event, 'WarGraves')" name="WarGraves"
+                        <input class="tablinks" name="WarGraves" onclick="openTab(event, 'WarGraves')" type="button"
                                value="<< Вернуться">
              <div class="strDiscript">
                     <h4><b>Индивидуальная могила</b></h4>
@@ -6017,7 +6064,7 @@ require_once "request.php";
         </div>
 
         <div class="tabcontent" id="graves-6">
-                        <input type="button" class="tablinks" onclick="openTab(event, 'WarGraves')" name="WarGraves"
+                        <input class="tablinks" name="WarGraves" onclick="openTab(event, 'WarGraves')" type="button"
                                value="<< Вернуться">
              <div class="strDiscript">
                     <h4><b>Братская могила</b></h4>
@@ -6046,7 +6093,7 @@ require_once "request.php";
         </div>
 
         <div class="tabcontent" id="graves-7">
-                        <input type="button" class="tablinks" onclick="openTab(event, 'WarGraves')" name="WarGraves"
+                        <input class="tablinks" name="WarGraves" onclick="openTab(event, 'WarGraves')" type="button"
                                value="<< Вернуться">
              <div class="strDiscript">
                     <h4><b>Воинское кладбище</b></h4>
@@ -6081,7 +6128,7 @@ require_once "request.php";
         </div>
 
         <div class="tabcontent" id="graves-8">
-                        <input type="button" class="tablinks" onclick="openTab(event, 'WarGraves')" name="WarGraves"
+                        <input class="tablinks" name="WarGraves" onclick="openTab(event, 'WarGraves')" type="button"
                                value="<< Вернуться">
              <div class="strDiscript">
                     <h4><b>Братская могила</b></h4>
@@ -6109,606 +6156,878 @@ require_once "request.php";
                     </p>
                         </div>
         </div>
+
+        <div class="tabcontent" id="graves-9">
+                        <input class="tablinks" name="WarGraves" onclick="openTab(event, 'WarGraves')" type="button"
+                               value="<< Вернуться">
+             <div class="strDiscript">
+                    <h4><b>Индивидуальная могила</b></h4>
+                 <div class="image__wrapper">
+                    <img alt="" class="minimized" src="Styles/PhotoWarGraves/1%20Воинское%20кладбище.jpg" style="width: 50%;
+    margin-left: 10%;">
+                </div>
+                    <p><strong>Местоположение:</strong><br>
+                        г. Витебск, ул. 7-я Полоцкая (гражданское кладбище «Старо-Семеновское»).<br>
+                    </p>
+                        <p>
+                            <span style="margin-left: 3%">Представляет</span> собой стандартную надгробную стелу из
+                                мраморной крошки.<br>
+                        </p>
+                    <p>
+                        <i><strong>Посмотреть на карте:</strong><br><a class="aMemorialCard"
+                                                                       href="https://goo.gl/maps/8GpBw4PcXUJfLDKY9">
+                            Ш. 55.19527981
+                            Д. 30.17249644
+                        </a>
+                        </i>
+                    </p>
+                        </div>
+        </div>
+
+        <div class="tabcontent" id="graves-10">
+                        <input class="tablinks" name="WarGraves" onclick="openTab(event, 'WarGraves')" type="button"
+                               value="<< Вернуться">
+             <div class="strDiscript">
+                    <h4><b>Индивидуальная могила</b></h4>
+                 <div class="image__wrapper">
+                    <img alt="" class="minimized" src="Styles/PhotoWarGraves/1%20Воинское%20кладбище.jpg" style="width: 50%;
+    margin-left: 10%;">
+                </div>
+                    <p><strong>Местоположение:</strong><br>
+                        г. Витебск, ул. Центральная.<br>
+                    </p>
+                        <p>
+                            <span style="margin-left: 3%">Скульптура</span> установлена в 1976 году.<br>
+
+                            <span style="margin-left: 3%">Представляет</span> собой полуфигура солдата из бетона - высота 4
+                                метра. Скульптор – Косицын, архитектор - А. Иванин. Памятник представляет собой
+                                стелу, которая расширяется вверху и плавно переходит в скульптурную полуфигуру
+                                солдата. В одной руке он держит автомат, в другой – флаг.<br>
+                        </p>
+                    <p>
+                        <i><strong>Посмотреть на карте:</strong><br><a class="aMemorialCard"
+                                                                       href="https://goo.gl/maps/KDyKSwKeZMUDzsuJA">
+                            Ш. 55.29829284
+                            Д. 30.30690193
+                        </a>
+                        </i>
+                    </p>
+                        </div>
+        </div>
+
+        <div class="tabcontent" id="graves-11">
+                        <input class="tablinks" name="WarGraves" onclick="openTab(event, 'WarGraves')" type="button"
+                               value="<< Вернуться">
+             <div class="strDiscript">
+                    <h4><b>Воинский участок кладбища «Аллея павших героев»</b></h4>
+                 <div class="image__wrapper">
+                    <img alt="" class="minimized" src="Styles/PhotoWarGraves/1%20Воинское%20кладбище.jpg" style="width: 50%;
+    margin-left: 10%;">
+                </div>
+                    <p><strong>Местоположение:</strong><br>
+                        Находится в Витебском районе (Октябрьский сельисполком) -  Витебское городское кладбище «Копти». <br>
+                    </p>
+                        <p>
+                            <span style="margin-left: 3%">Перезахоронение</span> произошло в 2016 году. Воинский участок
+                                кладбища был создан в 2016 году для последующего захоронения защитников Отечества и
+                                жертв войн, найденных на территории города Витебска.  <br>
+
+                            <span style="margin-left: 3%">Представляет</span> собой 2 стандартные надгробия из черного
+                                гранита - стелы с текстом.  <br>
+                        </p>
+                    <p>
+                        <i><strong>Посмотреть на карте:</strong><br><a class="aMemorialCard"
+                                                                       href="https://goo.gl/maps/phyhc9yK8L58MmvK8">
+                            Ш. 55.04342982
+                            Д. 30.3107965
+                        </a>
+                        </i>
+                    </p>
+                        </div>
+        </div>
+
+        <div class="tabcontent" id="graves-12">
+                        <input class="tablinks" name="WarGraves" onclick="openTab(event, 'WarGraves')" type="button"
+                               value="<< Вернуться">
+             <div class="strDiscript">
+                    <h4><b>Могила неизвестного солдата</b></h4>
+                 <div class="image__wrapper">
+                    <img alt="" class="minimized" src="Styles/PhotoWarGraves/1%20Воинское%20кладбище.jpg" style="width: 50%;
+    margin-left: 10%;">
+                </div>
+                    <p><strong>Местоположение:</strong><br>
+                        г.Витебск, гражданское кладбище «Загорское». <br>
+                    </p>
+                        <p>
+                            <span style="margin-left: 3%">Захоронения</span> 1944-1945 гг. Надгробный памятник установлен в
+                                наше время. <br>
+
+                            <span style="margin-left: 3%">Представляет</span> собой гранитный памятник.<br>
+                        </p>
+                    <p>
+                        <i><strong>Посмотреть на карте:</strong><br><a class="aMemorialCard"
+                                                                       href="https://goo.gl/maps/phyhc9yK8L58MmvK8">
+                            Ш. 7422865
+                            Д. 1889947
+                        </a>
+                        </i>
+                    </p>
+                        </div>
+        </div>
+
+        <div class="tabcontent" id="graves-13">
+                        <input class="tablinks" name="WarGraves" onclick="openTab(event, 'WarGraves')" type="button"
+                               value="<< Вернуться">
+             <div class="strDiscript">
+                    <h4><b>Место массового уничтожения</b></h4>
+                 <div class="image__wrapper">
+                    <img alt="" class="minimized" src="Styles/PhotoWarGraves/1%20Воинское%20кладбище.jpg" style="width: 50%;
+    margin-left: 10%;">
+                </div>
+                    <p><strong>Местоположение:</strong><br>
+                        г. Витебск, ул. Баумана (берег р. Витьба, территория парка имени 40-летия ВЛКСМ»). <br>
+                    </p>
+                        <p>
+                            <span style="margin-left: 3%">Стена</span> из бетона с текстовой доской возведена в 1964 году,
+                                реконструирована в 1984 году. За стеной насыпан отдернованный холм. <br>
+                        </p>
+                    <p>
+                        <i><strong>Посмотреть на карте:</strong><br><a class="aMemorialCard"
+                                                                       href="https://goo.gl/maps/QrxE2abTNgVoKMmS6">
+                            Ш. 55.04342982
+                            Д. 30.3107965
+                        </a>
+                        </i>
+                    </p>
+                        </div>
+        </div>
+
+        <div class="tabcontent" id="graves-14">
+                        <input class="tablinks" name="WarGraves" onclick="openTab(event, 'WarGraves')" type="button"
+                               value="<< Вернуться">
+             <div class="strDiscript">
+                    <h4><b>Место массового уничтожения</b></h4>
+                 <div class="image__wrapper">
+                    <img alt="" class="minimized" src="Styles/PhotoWarGraves/1%20Воинское%20кладбище.jpg" style="width: 50%;
+    margin-left: 10%;">
+                </div>
+                    <p><strong>Местоположение:</strong><br>
+                        г.Витебск, ул. Титова (территория бывшего 5-го железнодорожного полка) <br>
+                    </p>
+                        <p>
+                            <span style="margin-left: 3%">Возникло</span> в 1941-1944 гг. Обелиск установлен в 1964 году,
+                                каплица в 2012 году.<br>
+
+                            <span style="margin-left: 3%">Представляет</span> собой обелиск с текстовой доской (бетон, автор
+                                арх. А.Бельский) и  кирпичную каплицу. На месте бывших погребений стоят деревянные
+                                кресты.  <br>
+                        </p>
+                    <p>
+                        <i><strong>Посмотреть на карте:</strong><br><a class="aMemorialCard"
+                                                                       href="https://goo.gl/maps/5S3AasWXUdymQjid9">
+                            Ш. 55.19375189
+                            Д. 30.13908148
+                        </a>
+                        </i>
+                    </p>
+                        </div>
+        </div>
+
+        <div class="tabcontent" id="graves-15">
+                        <input class="tablinks" name="WarGraves" onclick="openTab(event, 'WarGraves')" type="button"
+                               value="<< Вернуться">
+             <div class="strDiscript">
+                    <h4><b>Братская могила</b></h4>
+                 <div class="image__wrapper">
+                    <img alt="" class="minimized" src="Styles/PhotoWarGraves/1%20Воинское%20кладбище.jpg" style="width: 50%;
+    margin-left: 10%;">
+                </div>
+                    <p><strong>Местоположение:</strong><br>
+                        г. Витебск, ул. Верховская <br>
+                    </p>
+                        <p>
+                            <span style="margin-left: 3%">Захоронения</span> 1941-го и 1966-го годов.<br>
+
+                                <span style="margin-left: 3%">Представляет</span> собой стелу из бетона с текстовой доской. <br>
+                        </p>
+                    <p>
+                        <i><strong>Посмотреть на карте:</strong><br><a class="aMemorialCard"
+                                                                       href="https://goo.gl/maps/WQPTQUNrdB8tDQkw8">
+                            Ш. 55.28620333
+                            Д. 30.25235653
+                        </a>
+                        </i>
+                    </p>
+                        </div>
+        </div>
+
+        <div class="tabcontent" id="graves-16">
+                        <input class="tablinks" name="WarGraves" onclick="openTab(event, 'WarGraves')" type="button"
+                               value="<< Вернуться">
+             <div class="strDiscript">
+                    <h4><b>Братская могила</b></h4>
+                 <div class="image__wrapper">
+                    <img alt="" class="minimized" src="Styles/PhotoWarGraves/1%20Воинское%20кладбище.jpg" style="width: 50%;
+    margin-left: 10%;">
+                </div>
+                    <p><strong>Местоположение:</strong><br>
+                        г. Витебск, Мазуринский проезд (по дороге в поселок Улановичи). <br>
+                    </p>
+                        <p>
+                            <span style="margin-left: 3%">Захоронения</span> 1941-1944 гг.<br>
+
+                                <span style="margin-left: 3%">Представляет</span> собой камень с текстовой доской. Данное
+                                воинское захоронение является захоронением времен Великой Отечественной войны.
+                                Выявлено в период проведения поисковых работ с 19.10.2007 г. по 23.10.2007 г. личным
+                                составом в/ч 28443.<br>
+                        </p>
+                    <p>
+                        <i><strong>Посмотреть на карте:</strong><br><a class="aMemorialCard"
+                                                                       href="https://goo.gl/maps/Teqn2kWaj3sJ7BA18">
+                            Ш. 55.21718787
+                            Д. 30.17023802
+                        </a>
+                        </i>
+                    </p>
+                        </div>
+        </div>
     </span>
     <!-------------------------------------------------Card Content-->
 
     <div class="tabcontent" id="Streets">
-        <div class="part3">
-            <h3 style="margin-top: 1%; opacity: 80%; background-color: #eaeaea; border: 2px solid #dbdbdb; padding: 0.5%">
-                Места силы. Витебск - улицы</h3>
-            <p><span style="margin-left: 3%">Великая</span> Отечественная война прокатилась через Витебск сначала с
-                запада
-                на восток, потом с востока на запад. А Улица Князева
-                в промежутке – четыре года оккупации. Город сражался. Память о героях войны живёт в названиях улиц и
-                городских объектов, названных в их честь. Среди них – герои Великой Отечественной: генералы и рядовые,
-                летчики и пехотинцы, юноши и девушки… <br>
-                <span style="margin-left: 3%">В</span> данном разделе вы найдете перечень наименований улиц, переулков и
-                площадей с указанием их расположения, а
-                также исторические сведения о происхождении их названий.</p>
+        <div data-aos="fade-up" data-aos-duration="400">
+            <div>
+                <h3 style="margin-top: 1%; opacity: 80%; background-color: #eaeaea; border: 2px solid #dbdbdb; padding: 0.5%">
+                    Места силы. Витебск - улицы</h3>
+                <p><span style="margin-left: 3%">Великая</span> Отечественная война прокатилась через Витебск сначала с
+                    запада
+                    на восток, потом с востока на запад. А Улица Князева
+                    в промежутке – четыре года оккупации. Город сражался. Память о героях войны живёт в названиях улиц и
+                    городских объектов, названных в их честь. Среди них – герои Великой Отечественной: генералы и
+                    рядовые,
+                    летчики и пехотинцы, юноши и девушки… <br>
+                    <span style="margin-left: 3%">В</span> данном разделе вы найдете перечень наименований улиц,
+                    переулков и
+                    площадей с указанием их расположения, а
+                    также исторические сведения о происхождении их названий.</p>
+            </div>
         </div>
-        <div class="part4">
-            <div class="mainBottom">
-                <div style="padding: 1%; display: flex; align-items: baseline">
-                    <img alt="" class="mainBottomPadLeft" src="material/FondMira.jpg"
-                         style="width: 10%; padding-right: -10%">
-                    <img alt="" class="mainBottomPadLeft" src="material/Schl28.jpg" style="width: 10.4%">
-                    <img alt="" class="mainBottomPadLeft" src="material/VebVesti.jpg" style="width: 22%;">
+        <div data-aos="fade-up" data-aos-duration="500">
+            <div data-aos="fade-up" data-aos-duration="600">
+                <div class="mainBottom">
+                    <div style="padding: 1%; display: flex; align-items: baseline">
+                        <img alt="" class="mainBottomPadLeft" src="material/FondMira.jpg"
+                             style="width: 10%; padding-right: -10%">
+                        <img alt="" class="mainBottomPadLeft" src="material/Schl28.jpg" style="width: 10.4%">
+                        <img alt="" class="mainBottomPadLeft" src="material/VebVesti.jpg" style="width: 22%;">
+                    </div>
                 </div>
             </div>
-
-            <div class="divCards" style="display: flex; justify-content: space-between;">
-                <div class="card" onclick="openCard(event, 'st-26-Ijuna')">
-                    <img alt="" src="material/st-26-Ijuna.jpg"
-                         style="width:100%; height: 290px; padding: 1%; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);">
-                    <div class="container">
-                        <h4><b>Улица 26-го Июня</b></h4>
-                        <span><strong>Начинается:</strong>
+            <div data-aos="fade-up" data-aos-duration="700">
+                <div class="divCards" style="display: flex; justify-content: space-between;">
+                    <div class="card" onclick="openCard(event, 'st-26-Ijuna')">
+                        <img alt="" src="material/st-26-Ijuna.jpg"
+                             style="width:100%; height: 290px; padding: 1%; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);">
+                        <div class="container">
+                            <h4><b>Улица 26-го Июня</b></h4>
+                            <span><strong>Начинается:</strong>
                         улица Мира <br>
                         <strong>Заканчивается:</strong>
                         улица Чапаева</span>
+                        </div>
                     </div>
-                </div>
-                <div class="card" onclick="openCard(event, 'st-39-armii')">
-                    <img alt="" src="material/st-39-armii.jpg"
-                         style="width:100%; height: 290px; padding: 1%; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);">
-                    <div class="container">
-                        <h4><b>Улица 39-й Армии</b></h4>
-                        <span><strong>Начинается:</strong>
+                    <div class="card" onclick="openCard(event, 'st-39-armii')">
+                        <img alt="" src="material/st-39-armii.jpg"
+                             style="width:100%; height: 290px; padding: 1%; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);">
+                        <div class="container">
+                            <h4><b>Улица 39-й Армии</b></h4>
+                            <span><strong>Начинается:</strong>
                         переулок Стахановский<br>
                         <strong>Заканчивается:</strong>
                         2-й переулок Октябрьский</span>
+                        </div>
                     </div>
-                </div>
-                <div class="card" onclick="openCard(event, 'st-33-armii')">
-                    <img alt="" src="material/st-33-armii.jpg"
-                         style="width:100%; height: 290px; padding: 1%; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);">
-                    <div class="container">
-                        <h4><b>Улица 33-й Армии</b></h4>
-                        <span><strong>Начинается:</strong>
+                    <div class="card" onclick="openCard(event, 'st-33-armii')">
+                        <img alt="" src="material/st-33-armii.jpg"
+                             style="width:100%; height: 290px; padding: 1%; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);">
+                        <div class="container">
+                            <h4><b>Улица 33-й Армии</b></h4>
+                            <span><strong>Начинается:</strong>
                         улица Генерала Ивановского<br>
                         <strong>Заканчивается:</strong>
                         	улица Марка Фрадкина</span>
+                        </div>
                     </div>
                 </div>
             </div>
             <br>
-            <div class="divCards" style="display: flex; justify-content: space-between;">
-                <div class="card" onclick="openCard(event, 'st-43-armii')">
-                    <img alt=""
-                         src="https://www.adorama.com/images/300x300/NOPIC.JPG"
-                         style="width:100%; height: 290px; padding: 1%">
-                    <div class="container">
-                        <h4><b>Улица 43-й Армии</b></h4>
-                        <span><strong>Начинается:</strong>
+            <div data-aos="fade-up" data-aos-duration="800">
+                <div class="divCards" style="display: flex; justify-content: space-between;">
+                    <div class="card" onclick="openCard(event, 'st-43-armii')">
+                        <img alt=""
+                             src="https://www.adorama.com/images/300x300/NOPIC.JPG"
+                             style="width:100%; height: 290px; padding: 1%">
+                        <div class="container">
+                            <h4><b>Улица 43-й Армии</b></h4>
+                            <span><strong>Начинается:</strong>
                         улица Ломоносова<br>
                         <strong>Заканчивается:</strong>
                         	улица Киевская</span>
+                        </div>
                     </div>
-                </div>
-                <div class="card" onclick="openCard(event, 'st-Bagramyana')">
-                    <img alt="" src="material/st-Bagramyana.jpg"
-                         style="width:100%; height: 290px; padding: 1%; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);">
-                    <div class="container">
-                        <h4><b>Улица Баграмяна</b></h4>
-                        <span><strong>Начинается: </strong>
+                    <div class="card" onclick="openCard(event, 'st-Bagramyana')">
+                        <img alt="" src="material/st-Bagramyana.jpg"
+                             style="width:100%; height: 290px; padding: 1%; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);">
+                        <div class="container">
+                            <h4><b>Улица Баграмяна</b></h4>
+                            <span><strong>Начинается: </strong>
                         <label>проспект Московский</label>
                         <strong>Заканчивается:</strong>
                     улица Генерала Ивановского</span>
+                        </div>
                     </div>
-                </div>
-                <div class="card" onclick="openCard(event, 'most-Bloxina')">
-                    <img alt="" src="material/most-Blohina.jpg"
-                         style="width:100%; height: 290px; padding: 1%; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);">
-                    <div class="container">
-                        <h4><b>Мост Блохина</b></h4>
+                    <div class="card" onclick="openCard(event, 'most-Bloxina')">
+                        <img alt="" src="material/most-Blohina.jpg"
+                             style="width:100%; height: 290px; padding: 1%; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);">
+                        <div class="container">
+                            <h4><b>Мост Блохина</b></h4>
+                        </div>
                     </div>
                 </div>
             </div>
             <br>
-            <div class="divCards" style="display: flex; justify-content: space-between;">
-                <div class="card" onclick="openCard(event, 'st-Beloxvostika')">
-                    <img alt=""
-                         src="https://www.adorama.com/images/300x300/NOPIC.JPG"
-                         style="width:100%; height: 290px; padding: 1%">
-                    <div class="container">
-                        <h4><b>Улица Белохвостикова</b></h4>
-                        <span><strong>Начинается:</strong>
+            <div data-aos="fade-up" data-aos-duration="900" data-aos-once="true">
+                <div class="divCards" style="display: flex; justify-content: space-between;">
+                    <div class="card" onclick="openCard(event, 'st-Beloxvostika')">
+                        <img alt=""
+                             src="https://www.adorama.com/images/300x300/NOPIC.JPG"
+                             style="width:100%; height: 290px; padding: 1%">
+                        <div class="container">
+                            <h4><b>Улица Белохвостикова</b></h4>
+                            <span><strong>Начинается:</strong>
                         улица Чапаева<br></span>
+                        </div>
                     </div>
-                </div>
-                <div class="card" onclick="openCard(event, 'st-Bumagina')">
-                    <img alt="Avatar" src="material/st-Bumagina.jpg"
-                         style="width:100%; height: 290px; padding: 1%;">
-                    <div class="container">
-                        <h4><b>Улица Бумагина</b></h4>
-                        <span><strong>Начинается: </strong>
+                    <div class="card" onclick="openCard(event, 'st-Bumagina')">
+                        <img alt="Avatar" src="material/st-Bumagina.jpg"
+                             style="width:100%; height: 290px; padding: 1%;">
+                        <div class="container">
+                            <h4><b>Улица Бумагина</b></h4>
+                            <span><strong>Начинается: </strong>
                         <label>3-я улица Войкова</label>
                         <strong>Заканчивается:</strong>
                     	<label>улица Некрасова</label></span>
+                        </div>
                     </div>
-                </div>
-                <div class="card" onclick="openCard(event, 'st-Vatutin')">
-                    <img alt="Avatar" src="material/Ул._Ватутина1.jpg"
-                         style="width:100%; height: 290px; padding: 1%;">
-                    <div class="container">
-                        <h4><b>Улица Ватутина</b></h4>
-                        <span><strong>Начинается: </strong>
+                    <div class="card" onclick="openCard(event, 'st-Vatutin')">
+                        <img alt="Avatar" src="material/Ул._Ватутина1.jpg"
+                             style="width:100%; height: 290px; padding: 1%;">
+                        <div class="container">
+                            <h4><b>Улица Ватутина</b></h4>
+                            <span><strong>Начинается: </strong>
                         <label>2-я улица Городокская</label>
                         <strong>Заканчивается:</strong>
                     	<label>	6-я улица Городокская</label></span>
+                        </div>
                     </div>
                 </div>
             </div>
             <br>
-            <div class="divCards" style="display: flex; justify-content: space-between;">
-                <div class="card" onclick="openCard(event, 'st-Vinogradovoy')">
-                    <img alt=""
-                         src="https://www.adorama.com/images/300x300/NOPIC.JPG"
-                         style="width:100%; height: 290px; padding: 1%">
-                    <div class="container">
-                        <h4><b>Улица Виноградовой</b></h4>
-                        <span><strong>Начинается: </strong>
+            <div data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+                <div class="divCards" style="display: flex; justify-content: space-between;">
+                    <div class="card" onclick="openCard(event, 'st-Vinogradovoy')">
+                        <img alt=""
+                             src="https://www.adorama.com/images/300x300/NOPIC.JPG"
+                             style="width:100%; height: 290px; padding: 1%">
+                        <div class="container">
+                            <h4><b>Улица Виноградовой</b></h4>
+                            <span><strong>Начинается: </strong>
                         <label>улица Ленинградская</label>
                         <strong>Заканчивается:</strong>
                     	<label>улица Титова</label></span>
+                        </div>
                     </div>
-                </div>
-                <div class="card" onclick="openCard(event, 'st-Vera_Xoruzh')">
-                    <img alt="Avatar"
-                         src="material/Viery_Charužaj_street_(Minsk,_Belarus)_—_Вуліца_Веры_Харужай_(Мінск,_Беларусь)_—_Улица_Веры_Хоружей_(Минск,_Беларусь)_-_6.jpg"
-                         style="width:100%; height: 290px; padding: 1%;">
-                    <div class="container">
-                        <h4><b>Улица Веры Хоружей</b></h4>
-                        <span><strong>Начинается: </strong>
+                    <div class="card" onclick="openCard(event, 'st-Vera_Xoruzh')">
+                        <img alt="Avatar"
+                             src="material/Viery_Charužaj_street_(Minsk,_Belarus)_—_Вуліца_Веры_Харужай_(Мінск,_Беларусь)_—_Улица_Веры_Хоружей_(Минск,_Беларусь)_-_6.jpg"
+                             style="width:100%; height: 290px; padding: 1%;">
+                        <div class="container">
+                            <h4><b>Улица Веры Хоружей</b></h4>
+                            <span><strong>Начинается: </strong>
                         <label>улица 6-я Черняховского</label></span>
+                        </div>
                     </div>
-                </div>
-                <div class="card" onclick="openCard(event, 'st-Gastello')">
-                    <img alt="Avatar" src="material/31_big.jpg"
-                         style="width:100%; height: 290px; padding: 1%;">
-                    <div class="container">
-                        <h4><b>Улица Гастелло</b></h4>
-                        <span><strong>Начинается: </strong>
+                    <div class="card" onclick="openCard(event, 'st-Gastello')">
+                        <img alt="Avatar" src="material/31_big.jpg"
+                             style="width:100%; height: 290px; padding: 1%;">
+                        <div class="container">
+                            <h4><b>Улица Гастелло</b></h4>
+                            <span><strong>Начинается: </strong>
                         <label>улица Супруна</label>
                         <strong>Заканчивается:</strong>
                     	<label>з-я улица Заслонова</label></span>
+                        </div>
                     </div>
                 </div>
             </div>
             <br>
-            <div class="divCards" style="display: flex; justify-content: space-between;">
-                <div class="card" onclick="openCard(event, 'st-Ludnikova')">
-                    <img alt=""
-                         src="material/pr-g-Lyudnikova.jpg" style="width:100%; height: 290px; padding: 1%">
-                    <div class="container">
-                        <h4><b>Проспект Генерала Людникова</b></h4>
-                        <span><strong>Начинается: </strong>
+            <div data-aos="fade-up" data-aos-once="true">
+                <div class="divCards" style="display: flex; justify-content: space-between;">
+                    <div class="card" onclick="openCard(event, 'st-Ludnikova')">
+                        <img alt=""
+                             src="material/pr-g-Lyudnikova.jpg" style="width:100%; height: 290px; padding: 1%">
+                        <div class="container">
+                            <h4><b>Проспект Генерала Людникова</b></h4>
+                            <span><strong>Начинается: </strong>
                         <label>улица Гагарина</label>
                         <strong>Заканчивается:</strong>
                     	<label>проспект Фрунзе</label></span>
+                        </div>
                     </div>
-                </div>
-                <div class="card" onclick="openCard(event, 'st-Beloborodova')">
-                    <img alt="Avatar"
-                         src="material/st-G-Beloborodova.jpg"
-                         style="width:100%; height: 290px; padding: 1%;">
-                    <div class="container">
-                        <h4><b>Улица Генерала Белобородова</b></h4>
-                        <span><strong>Начинается: </strong>
+                    <div class="card" onclick="openCard(event, 'st-Beloborodova')">
+                        <img alt="Avatar"
+                             src="material/st-G-Beloborodova.jpg"
+                             style="width:100%; height: 290px; padding: 1%;">
+                        <div class="container">
+                            <h4><b>Улица Генерала Белобородова</b></h4>
+                            <span><strong>Начинается: </strong>
                         <label>	улица Герцена</label><br>
                         <strong>Заканчивается: </strong>
                         <label>площадь Победы</label></span>
+                        </div>
                     </div>
-                </div>
-                <div class="card" onclick="openCard(event, 'st-Gorovtsa')">
-                    <img alt="Avatar" src="material/st-Gorovtsa.jpg"
-                         style="width:100%; height: 290px; padding: 1%;">
-                    <div class="container">
-                        <h4><b>Улица Горовца</b></h4>
-                        <span><strong>Начинается: </strong>
+                    <div class="card" onclick="openCard(event, 'st-Gorovtsa')">
+                        <img alt="Avatar" src="material/st-Gorovtsa.jpg"
+                             style="width:100%; height: 290px; padding: 1%;">
+                        <div class="container">
+                            <h4><b>Улица Горовца</b></h4>
+                            <span><strong>Начинается: </strong>
                         <label>площадь Ленина</label>
                         <strong>Заканчивается:</strong>
                     	<label>	Смоленская площадь</label></span>
+                        </div>
                     </div>
                 </div>
             </div>
             <br>
-            <div class="divCards" style="display: flex; justify-content: space-between;">
-                <div class="card" onclick="openCard(event, 'st-g-Ivanovskogo')">
-                    <img alt=""
-                         src="material/st-g-Ivanovskogo.jpg" style="width:100%; height: 290px; padding: 1%">
-                    <div class="container">
-                        <h4><b>Улица Генерала Ивановского</b></h4>
-                        <span><strong>Начинается: </strong>
+            <div data-aos="fade-up" data-aos-once="true">
+                <div class="divCards" style="display: flex; justify-content: space-between;">
+                    <div class="card" onclick="openCard(event, 'st-g-Ivanovskogo')">
+                        <img alt=""
+                             src="material/st-g-Ivanovskogo.jpg" style="width:100%; height: 290px; padding: 1%">
+                        <div class="container">
+                            <h4><b>Улица Генерала Ивановского</b></h4>
+                            <span><strong>Начинается: </strong>
                         <label>	улица Короткевича</label>
                         <strong>Заканчивается:</strong>
                     	<label>улица Актеров Еременко</label></span>
+                        </div>
                     </div>
-                </div>
-                <div class="card" onclick="openCard(event, 'st-Beloborodova')">
-                    <img alt="Avatar"
-                         src="material/Grigoriev.jpg"
-                         style="width:100%; height: 290px; padding: 1%;">
-                    <div class="container">
-                        <h4><b>Улица Григорьева</b></h4>
-                        <span><strong>Начинается: </strong>
+                    <div class="card" onclick="openCard(event, 'st-Beloborodova')">
+                        <img alt="Avatar"
+                             src="material/Grigoriev.jpg"
+                             style="width:100%; height: 290px; padding: 1%;">
+                        <div class="container">
+                            <h4><b>Улица Григорьева</b></h4>
+                            <span><strong>Начинается: </strong>
                         <label>2-я Октябрьская улица</label><br>
                         <strong>Заканчивается: </strong>
                         <label>улица 39-й Армии</label></span>
+                        </div>
                     </div>
-                </div>
-                <div class="card" onclick="openCard(event, 'st-Gromova')">
-                    <img alt="Avatar" src="material/Gromov.jpg"
-                         style="width:100%; height: 290px; padding: 1%;">
-                    <div class="container">
-                        <h4><b>Улица Громова</b></h4>
-                        <span><strong>Начинается: </strong>
+                    <div class="card" onclick="openCard(event, 'st-Gromova')">
+                        <img alt="Avatar" src="material/Gromov.jpg"
+                             style="width:100%; height: 290px; padding: 1%;">
+                        <div class="container">
+                            <h4><b>Улица Громова</b></h4>
+                            <span><strong>Начинается: </strong>
                         <label>площадь Ленина</label>
                         <strong>Заканчивается:</strong>
                     	<label>переулок Спортивный</label></span>
+                        </div>
                     </div>
                 </div>
             </div>
             <br>
-            <div class="divCards" style="display: flex; justify-content: space-between;">
-                <div class="card" onclick="openCard(event, 'st-g-Donukalov-AF')">
-                    <img alt=""
-                         src="material/NOPIC.jpg" style="width:100%; height: 290px; padding: 1%">
-                    <div class="container">
-                        <h4><b>Улица Данукалова</b></h4>
-                        <span><strong>Начинается: </strong>
+            <div data-aos="fade-up" data-aos-once="true">
+                <div class="divCards" style="display: flex; justify-content: space-between;">
+                    <div class="card" onclick="openCard(event, 'st-g-Donukalov-AF')">
+                        <img alt=""
+                             src="material/NOPIC.jpg" style="width:100%; height: 290px; padding: 1%">
+                        <div class="container">
+                            <h4><b>Улица Данукалова</b></h4>
+                            <span><strong>Начинается: </strong>
                         <label>берег Западной Двины</label></span>
+                        </div>
                     </div>
-                </div>
-                <div class="card" onclick="openCard(event, 'st-Dovatora')">
-                    <img alt="Avatar"
-                         src="material/st-Dovatora.jpg"
-                         style="width:100%; height: 290px; padding: 1%;">
-                    <div class="container">
-                        <h4><b>Улица Доватора</b></h4>
-                        <span><strong>Начинается: </strong>
+                    <div class="card" onclick="openCard(event, 'st-Dovatora')">
+                        <img alt="Avatar"
+                             src="material/st-Dovatora.jpg"
+                             style="width:100%; height: 290px; padding: 1%;">
+                        <div class="container">
+                            <h4><b>Улица Доватора</b></h4>
+                            <span><strong>Начинается: </strong>
                         <label>проспект Фрунзе</label><br>
                         <strong>Заканчивается: </strong>
                         <label>парк им. 40-летия ВЛКСМ</label></span>
+                        </div>
                     </div>
-                </div>
-                <div class="card" onclick="openCard(event, 'st-Zheatkova')">
-                    <img alt="Avatar" src="material/st-Zheatkova.jpg"
-                         style="width:100%; height: 290px; padding: 1%;">
-                    <div class="container">
-                        <h4><b>Улица Жесткова</b></h4>
-                        <span><strong>Начинается: </strong>
+                    <div class="card" onclick="openCard(event, 'st-Zheatkova')">
+                        <img alt="Avatar" src="material/st-Zheatkova.jpg"
+                             style="width:100%; height: 290px; padding: 1%;">
+                        <div class="container">
+                            <h4><b>Улица Жесткова</b></h4>
+                            <span><strong>Начинается: </strong>
                         <label>улица Ленина</label><br>
                         <strong>Заканчивается:</strong>
                     	<label>	улица Офицерская</label></span>
+                        </div>
                     </div>
                 </div>
             </div>
             <br>
-            <div class="divCards" style="display: flex; justify-content: space-between;">
-                <div class="card" onclick="openCard(event, 'st-Zaslonova')">
-                    <img alt=""
-                         src="material/st-Zaslonova.jpg" style="width:100%; height: 290px; padding: 1%">
-                    <div class="container">
-                        <h4><b>Улица Заслонова</b></h4>
-                        <span><strong>Начинается: </strong>
+            <div data-aos="fade-up" data-aos-once="true">
+                <div class="divCards" style="display: flex; justify-content: space-between;">
+                    <div class="card" onclick="openCard(event, 'st-Zaslonova')">
+                        <img alt=""
+                             src="material/st-Zaslonova.jpg" style="width:100%; height: 290px; padding: 1%">
+                        <div class="container">
+                            <h4><b>Улица Заслонова</b></h4>
+                            <span><strong>Начинается: </strong>
                           <label>улица Ленинградская</label><br>
                           <strong>Начинается: </strong>
                           <label>улица Титова</label></span>
+                        </div>
                     </div>
-                </div>
-                <div class="card" onclick="openCard(event, 'st-Zenkovoj')">
-                    <img alt="Avatar"
-                         src="material/st-Zenkovoj.jpg"
-                         style="width:100%; height: 290px; padding: 1%;">
-                    <div class="container">
-                        <h4><b>Улица Зеньковой</b></h4>
-                        <span><strong>Начинается: </strong>
+                    <div class="card" onclick="openCard(event, 'st-Zenkovoj')">
+                        <img alt="Avatar"
+                             src="material/st-Zenkovoj.jpg"
+                             style="width:100%; height: 290px; padding: 1%;">
+                        <div class="container">
+                            <h4><b>Улица Зеньковой</b></h4>
+                            <span><strong>Начинается: </strong>
                         <label>улица Локомотивная</label><br>
                         <strong>Заканчивается: </strong>
                         <label>улица Ильинского</label></span>
+                        </div>
                     </div>
-                </div>
-                <div class="card" onclick="openCard(event, 'st-Knyazev')">
-                    <img alt="Avatar" src="material/Knyazev-st.jpg"
-                         style="width:100%; height: 290px; padding: 1%;">
-                    <div class="container">
-                        <h4><b>Улица Князева</b></h4>
-                        <span><strong>Начинается: </strong>
+                    <div class="card" onclick="openCard(event, 'st-Knyazev')">
+                        <img alt="Avatar" src="material/Knyazev-st.jpg"
+                             style="width:100%; height: 290px; padding: 1%;">
+                        <div class="container">
+                            <h4><b>Улица Князева</b></h4>
+                            <span><strong>Начинается: </strong>
                         <label>улица Титова</label><br>
                         <strong>Заканчивается:</strong>
                     	<label>улица Ленинградкая</label></span>
+                        </div>
                     </div>
                 </div>
             </div>
             <br>
-            <div class="divCards" style="display: flex; justify-content: space-between;">
-                <div class="card" onclick="openCard(event, 'st-Kondratieva')">
-                    <img alt=""
-                         src="material/st-Kondratieva.jpg" style="width:100%; height: 290px; padding: 1%">
-                    <div class="container">
-                        <h4><b>Улица Кондратьева</b></h4>
-                        <span><strong>Начинается: </strong>
+            <div data-aos="fade-up" data-aos-once="true">
+                <div class="divCards" style="display: flex; justify-content: space-between;">
+                    <div class="card" onclick="openCard(event, 'st-Kondratieva')">
+                        <img alt=""
+                             src="material/st-Kondratieva.jpg" style="width:100%; height: 290px; padding: 1%">
+                        <div class="container">
+                            <h4><b>Улица Кондратьева</b></h4>
+                            <span><strong>Начинается: </strong>
                           <label>улица Покровская</label><br>
                           <strong>Начинается: </strong>
                           <label>улица Ильинского</label></span>
+                        </div>
                     </div>
-                </div>
-                <div class="card" onclick="openCard(event, 'st-Kolcova')">
-                    <img alt="Avatar"
-                         src="material/NOPIC.jpg"
-                         style="width:100%; height: 290px; padding: 1%;">
-                    <div class="container">
-                        <h4><b>Переулок Кольцова</b></h4>
-                        <span><strong>Начинается: </strong>
+                    <div class="card" onclick="openCard(event, 'st-Kolcova')">
+                        <img alt="Avatar"
+                             src="material/NOPIC.jpg"
+                             style="width:100%; height: 290px; padding: 1%;">
+                        <div class="container">
+                            <h4><b>Переулок Кольцова</b></h4>
+                            <span><strong>Начинается: </strong>
                         <label>улица Мичурина</label></span>
+                        </div>
                     </div>
-                </div>
-                <div class="card" onclick="openCard(event, 'st-RedPartizan')">
-                    <img alt="Avatar" src="material/NOPIC.jpg"
-                         style="width:100%; height: 290px; padding: 1%;">
-                    <div class="container">
-                        <h4><b>Улица Красного Партизана</b></h4>
-                        <span><strong>Начинается: </strong>
+                    <div class="card" onclick="openCard(event, 'st-RedPartizan')">
+                        <img alt="Avatar" src="material/NOPIC.jpg"
+                             style="width:100%; height: 290px; padding: 1%;">
+                        <div class="container">
+                            <h4><b>Улица Красного Партизана</b></h4>
+                            <span><strong>Начинается: </strong>
                         <label>улица 1-я Краснобригадная</label><br>
                         <strong>Заканчивается:</strong>
                     	<label>Великолукский тракт</label></span>
+                        </div>
                     </div>
                 </div>
             </div>
             <br>
-            <div class="divCards" style="display: flex; justify-content: space-between;">
-                <div class="card" onclick="openCard(event, 'st-Leonova')">
-                    <img alt=""
-                         src="material/st-Leonova.jpg" style="width:100%; height: 290px; padding: 1%">
-                    <div class="container">
-                        <h4><b>Улица Леонова</b></h4>
-                        <span><strong>Начинается: </strong>
+            <div data-aos="fade-up" data-aos-once="true">
+                <div class="divCards" style="display: flex; justify-content: space-between;">
+                    <div class="card" onclick="openCard(event, 'st-Leonova')">
+                        <img alt=""
+                             src="material/st-Leonova.jpg" style="width:100%; height: 290px; padding: 1%">
+                        <div class="container">
+                            <h4><b>Улица Леонова</b></h4>
+                            <span><strong>Начинается: </strong>
                           <label>улица Титова</label><br>
                           <strong>Начинается: </strong>
                           <label>улица Карла Маркса</label></span>
+                        </div>
                     </div>
-                </div>
-                <div class="card" onclick="openCard(event, 'st-Maskaev')">
-                    <img alt="Avatar"
-                         src="material/NOPIC.jpg"
-                         style="width:100%; height: 290px; padding: 1%;">
-                    <div class="container">
-                        <h4><b>Улица Маскаева</b></h4>
-                        <span><strong>Начинается: </strong>
+                    <div class="card" onclick="openCard(event, 'st-Maskaev')">
+                        <img alt="Avatar"
+                             src="material/NOPIC.jpg"
+                             style="width:100%; height: 290px; padding: 1%;">
+                        <div class="container">
+                            <h4><b>Улица Маскаева</b></h4>
+                            <span><strong>Начинается: </strong>
                         <label>улица Заречная</label><br>
                         <strong>Заканчивается: </strong>
                         <label>улица Ромашкина</label>
                     </span>
+                        </div>
                     </div>
-                </div>
-                <div class="card" onclick="openCard(event, 'st-MyasoEd')">
-                    <img alt="Avatar" src="material/MyasoEd.jpg"
-                         style="width:100%; height: 290px; padding: 1%;">
-                    <div class="container">
-                        <h4><b>Улица Мясоедова</b></h4>
-                        <span><strong>Начинается: </strong>
+                    <div class="card" onclick="openCard(event, 'st-MyasoEd')">
+                        <img alt="Avatar" src="material/MyasoEd.jpg"
+                             style="width:100%; height: 290px; padding: 1%;">
+                        <div class="container">
+                            <h4><b>Улица Мясоедова</b></h4>
+                            <span><strong>Начинается: </strong>
                         <label>улица 3-я Сильницкого</label><br>
                         <strong>Заканчивается:</strong>
                     	<label>улица Сивакова</label></span>
+                        </div>
                     </div>
                 </div>
             </div>
             <br>
-            <div class="divCards" style="display: flex; justify-content: space-between;">
-                <div class="card" onclick="openCard(event, 'st-Pobeda')">
-                    <img alt=""
-                         src="material/pl-Victory-03.jpg" style="width:100%; height: 290px; padding: 1%">
-                    <div class="container">
-                        <h4><b>Площадь Победы</b></h4>
+            <div data-aos="fade-up" data-aos-once="true">
+                <div class="divCards" style="display: flex; justify-content: space-between;">
+                    <div class="card" onclick="openCard(event, 'st-Pobeda')">
+                        <img alt=""
+                             src="material/pl-Victory-03.jpg" style="width:100%; height: 290px; padding: 1%">
+                        <div class="container">
+                            <h4><b>Площадь Победы</b></h4>
+                        </div>
                     </div>
-                </div>
-                <div class="card" onclick="openCard(event, 'st-Pobedy-prospekt-2')">
-                    <img alt="Avatar"
-                         src="material/Pobedy-prospekt-2.jpg"
-                         style="width:100%; height: 290px; padding: 1%;">
-                    <div class="container">
-                        <h4><b>Проспект Победы</b></h4>
-                        <span><strong>Начинается: </strong>
+                    <div class="card" onclick="openCard(event, 'st-Pobedy-prospekt-2')">
+                        <img alt="Avatar"
+                             src="material/Pobedy-prospekt-2.jpg"
+                             style="width:100%; height: 290px; padding: 1%;">
+                        <div class="container">
+                            <h4><b>Проспект Победы</b></h4>
+                            <span><strong>Начинается: </strong>
                         <label>проспект Московский</label><br>
                         <strong>Заканчивается : </strong>
                         <label>микрорайон Юг-7А</label>
                     </span>
+                        </div>
                     </div>
-                </div>
-                <div class="card" onclick="openCard(event, 'st-Portnovoj')">
-                    <img alt="Avatar"
-                         src="material/Zini_Portnovoj_Street_(Saint-Petersburg).jpg"
-                         style="width:100%; height: 290px; padding: 1%;">
-                    <div class="container">
-                        <h4><b>Улица Портновой</b></h4>
-                        <span><strong>Начинается: </strong>
+                    <div class="card" onclick="openCard(event, 'st-Portnovoj')">
+                        <img alt="Avatar"
+                             src="material/Zini_Portnovoj_Street_(Saint-Petersburg).jpg"
+                             style="width:100%; height: 290px; padding: 1%;">
+                        <div class="container">
+                            <h4><b>Улица Портновой</b></h4>
+                            <span><strong>Начинается: </strong>
                         <label>улица Ольговская</label><br>
                         <strong>Заканчивается: </strong>
                     	<label>переулок 4-й Великолукский</label></span>
+                        </div>
                     </div>
                 </div>
             </div>
             <br>
-            <div class="divCards" style="display: flex; justify-content: space-between;">
-                <div class="card" onclick="openCard(event, 'st-Pobedy-prospekt-2')">
-                    <img alt=""
-                         src="material/Pobedy-prospekt-2.jpg" style="width:100%; height: 290px; padding: 1%">
-                    <div class="container">
-                        <h4><b>Проспект Победы</b></h4>
-                        <span><strong>Начинается: </strong>
+            <div data-aos="fade-up" data-aos-once="true">
+                <div class="divCards" style="display: flex; justify-content: space-between;">
+                    <div class="card" onclick="openCard(event, 'st-Pobedy-prospekt-2')">
+                        <img alt=""
+                             src="material/Pobedy-prospekt-2.jpg" style="width:100%; height: 290px; padding: 1%">
+                        <div class="container">
+                            <h4><b>Проспект Победы</b></h4>
+                            <span><strong>Начинается: </strong>
                         <label>проспект Московский</label><br>
                         <strong>Заканчивается: </strong>
                         <label>микрорайон Юг-7А</label><br>
                     </span>
+                        </div>
                     </div>
-                </div>
-                <div class="card" onclick="openCard(event, 'st-Svechechkiniux')">
-                    <img alt="Avatar"
-                         src="material/NOPIC.jpg"
-                         style="width:100%; height: 290px; padding: 1%;">
-                    <div class="container">
-                        <h4><b>Улица Свечкиных</b></h4>
-                        <span><strong>Начинается: </strong>
+                    <div class="card" onclick="openCard(event, 'st-Svechechkiniux')">
+                        <img alt="Avatar"
+                             src="material/NOPIC.jpg"
+                             style="width:100%; height: 290px; padding: 1%;">
+                        <div class="container">
+                            <h4><b>Улица Свечкиных</b></h4>
+                            <span><strong>Начинается: </strong>
                         <label>	улица Поперечная</label><br>
                     </span>
+                        </div>
                     </div>
-                </div>
-                <div class="card" onclick="openCard(event, 'st-Smetanina')">
-                    <img alt="Avatar"
-                         src="material/st-Smetanina.jpg"
-                         style="width:100%; height: 290px; padding: 1%;">
-                    <div class="container">
-                        <h4><b>Улица Сметанина</b></h4>
-                        <span><strong>Начинается: </strong>
+                    <div class="card" onclick="openCard(event, 'st-Smetanina')">
+                        <img alt="Avatar"
+                             src="material/st-Smetanina.jpg"
+                             style="width:100%; height: 290px; padding: 1%;">
+                        <div class="container">
+                            <h4><b>Улица Сметанина</b></h4>
+                            <span><strong>Начинается: </strong>
                         <label>улица Максима Горького</label><br>
                         <strong>Заканчивается: </strong>
                     	<label>улица Новожлобинская улица</label></span>
+                        </div>
                     </div>
                 </div>
             </div>
             <br>
-            <div class="divCards" style="display: flex; justify-content: space-between;">
-                <div class="card" onclick="openCard(event, 'st-Svidinskogo')">
-                    <img alt=""
-                         src="material/NOPIC.jpg" style="width:100%; height: 290px; padding: 1%">
-                    <div class="container">
-                        <h4><b>Улица Свидинского</b></h4>
-                        <span><strong>Начинается: </strong>
+            <div data-aos="fade-up" data-aos-once="true">
+                <div class="divCards" style="display: flex; justify-content: space-between;">
+                    <div class="card" onclick="openCard(event, 'st-Svidinskogo')">
+                        <img alt=""
+                             src="material/NOPIC.jpg" style="width:100%; height: 290px; padding: 1%">
+                        <div class="container">
+                            <h4><b>Улица Свидинского</b></h4>
+                            <span><strong>Начинается: </strong>
                         <label>улица Гагарина</label><br>
                         <strong>Заканчивается: </strong>
                         <label>улица Володарского</label><br>
                     </span>
+                        </div>
                     </div>
-                </div>
-                <div class="card" onclick="openCard(event, 'st-pankova')">
-                    <img alt="Avatar"
-                         src="material/Svidinskij.jpg"
-                         style="width:100%; height: 290px; padding: 1%;">
-                    <div class="container">
-                        <h4><b>Улица Софьи Панковой</b></h4>
-                        <span><strong>Начинается: </strong>
+                    <div class="card" onclick="openCard(event, 'st-pankova')">
+                        <img alt="Avatar"
+                             src="material/Svidinskij.jpg"
+                             style="width:100%; height: 290px; padding: 1%;">
+                        <div class="container">
+                            <h4><b>Улица Софьи Панковой</b></h4>
+                            <span><strong>Начинается: </strong>
                         <label>улица Терешковой</label><br>
                     </span>
+                        </div>
                     </div>
-                </div>
-                <div class="card" onclick="openCard(event, 'st-Sivakova')">
-                    <img alt="Avatar"
-                         src="material/NOPIC.jpg"
-                         style="width:100%; height: 290px; padding: 1%;">
-                    <div class="container">
-                        <h4><b>Улица Сивакова</b></h4>
-                        <span><strong>Начинается: </strong>
+                    <div class="card" onclick="openCard(event, 'st-Sivakova')">
+                        <img alt="Avatar"
+                             src="material/NOPIC.jpg"
+                             style="width:100%; height: 290px; padding: 1%;">
+                        <div class="container">
+                            <h4><b>Улица Сивакова</b></h4>
+                            <span><strong>Начинается: </strong>
                         <label>улица Ленинградская</label><br>
                     </span>
+                        </div>
                     </div>
                 </div>
             </div>
             <br>
-            <div class="divCards" style="display: flex; justify-content: space-between;">
-                <div class="card" onclick="openCard(event, 'st-Stepanenko')">
-                    <img alt=""
-                         src="material/NOPIC.jpg" style="width:100%; height: 290px; padding: 1%">
-                    <div class="container">
-                        <h4><b>Улица Степаненко</b></h4>
-                        <span><strong>Начинается: </strong>
+            <div data-aos="fade-up" data-aos-once="true">
+                <div class="divCards" style="display: flex; justify-content: space-between;">
+                    <div class="card" onclick="openCard(event, 'st-Stepanenko')">
+                        <img alt=""
+                             src="material/NOPIC.jpg" style="width:100%; height: 290px; padding: 1%">
+                        <div class="container">
+                            <h4><b>Улица Степаненко</b></h4>
+                            <span><strong>Начинается: </strong>
                         <label>	улица Смоленская</label><br>
                         <strong>Заканчивается: </strong>
                         <label>улица 3-я Клиническая</label><br>
                     </span>
+                        </div>
                     </div>
-                </div>
-                <div class="card" onclick="openCard(event, 'st-Silickogo')">
-                    <img alt="Avatar"
-                         src="material/NOPIC.jpg"
-                         style="width:100%; height: 290px; padding: 1%;">
-                    <div class="container">
-                        <h4><b>Улица Сильницкого</b></h4>
-                        <span><strong>Начинается: </strong>
+                    <div class="card" onclick="openCard(event, 'st-Silickogo')">
+                        <img alt="Avatar"
+                             src="material/NOPIC.jpg"
+                             style="width:100%; height: 290px; padding: 1%;">
+                        <div class="container">
+                            <h4><b>Улица Сильницкого</b></h4>
+                            <span><strong>Начинается: </strong>
                         <label>улица Титова</label><br>
                         <strong>Начинается: </strong>
                         <label>улица Титова</label>
                     </span>
+                        </div>
                     </div>
-                </div>
-                <div class="card" onclick="openCard(event, 'st-Supruna')">
-                    <img alt="Avatar"
-                         src="material/NOPIC.jpg"
-                         style="width:100%; height: 290px; padding: 1%;">
-                    <div class="container">
-                        <h4><b>Улица Супруна</b></h4>
-                        <span><strong>Начинается: </strong>
+                    <div class="card" onclick="openCard(event, 'st-Supruna')">
+                        <img alt="Avatar"
+                             src="material/NOPIC.jpg"
+                             style="width:100%; height: 290px; padding: 1%;">
+                        <div class="container">
+                            <h4><b>Улица Супруна</b></h4>
+                            <span><strong>Начинается: </strong>
                         <label>улица Ленинградская</label><br>
                         <strong>Заканчивается: </strong>
                     	<label>улица Титова</label></span>
+                        </div>
                     </div>
                 </div>
             </div>
             <br>
-            <div class="divCards" style="display: flex; justify-content: space-between;">
-                <div class="card" onclick="openCard(event, 'st-Calikova')">
-                    <img alt="Avatar"
-                         src="material/IMG-20171205-WA0007.jpg.0x800_q85.jpg"
-                         style="width:100%; height: 290px; padding: 1%;">
-                    <div class="container">
-                        <h4><b>Улица Цаликова</b></h4>
-                        <span><strong>Начинается: </strong>
+            <div data-aos="fade-up" data-aos-once="true">
+                <div class="divCards" style="display: flex; justify-content: space-between;">
+                    <div class="card" onclick="openCard(event, 'st-Calikova')">
+                        <img alt="Avatar"
+                             src="material/IMG-20171205-WA0007.jpg.0x800_q85.jpg"
+                             style="width:100%; height: 290px; padding: 1%;">
+                        <div class="container">
+                            <h4><b>Улица Цаликова</b></h4>
+                            <span><strong>Начинается: </strong>
                         <label>	пересечение 4-го переулка Октябрьского и 2-й улицы Октябрьской</label><br>
                         <strong>Начинается: </strong>
                         <label>улица 11-я Социалистическая</label>
                     </span>
+                        </div>
                     </div>
-                </div>
-                <div class="card" onclick="openCard(event, 'st-Chernyahovskogo')">
-                    <img alt=""
-                         src="material/Chernyahovskogo-prospekt.jpg" style="width:100%; height: 290px; padding: 1%">
-                    <div class="container">
-                        <h4><b>Улица Степаненко</b></h4>
-                        <span><strong>Начинается: </strong>
+                    <div class="card" onclick="openCard(event, 'st-Chernyahovskogo')">
+                        <img alt=""
+                             src="material/Chernyahovskogo-prospekt.jpg" style="width:100%; height: 290px; padding: 1%">
+                        <div class="container">
+                            <h4><b>Улица Степаненко</b></h4>
+                            <span><strong>Начинается: </strong>
                         <label>площадь Победы</label><br>
                         <strong>Заканчивается: </strong>
                         <label>мост имени Шмырёва, Зеленогурская улица</label><br>
                     </span>
+                        </div>
                     </div>
-                </div>
-                <div class="card" onclick="openCard(event, 'st-Shmyreva')">
-                    <img alt="Avatar"
-                         src="material/st-Shmyreva.jpg"
-                         style="width:100%; height: 290px; padding: 1%;">
-                    <div class="container">
-                        <h4><b>Улица Шмырёва</b></h4>
-                        <span><strong>Начинается: </strong>
+                    <div class="card" onclick="openCard(event, 'st-Shmyreva')">
+                        <img alt="Avatar"
+                             src="material/st-Shmyreva.jpg"
+                             style="width:100%; height: 290px; padding: 1%;">
+                        <div class="container">
+                            <h4><b>Улица Шмырёва</b></h4>
+                            <span><strong>Начинается: </strong>
                         <label>улица Зеленогурская</label><br>
                         <strong>Заканчивается: </strong>
                     	<label>улица Аксановская</label></span>
+                        </div>
                     </div>
                 </div>
             </div>
             <br>
-            <div class="divCards" style="display: flex; justify-content: space-between;">
-                <div class="card" onclick="openCard(event, 'st-Shradera')">
-                    <img alt="Avatar"
-                         src="material/st-Shradera.jpg"
-                         style="width:100%; height: 290px; padding: 1%;">
-                    <div class="container">
-                        <h4><b>Улица Шрадера</b></h4>
-                        <span><strong>Начинается: </strong>
+            <div data-aos="fade-up" data-aos-once="true">
+                <div class="divCards" style="display: flex; justify-content: space-between;">
+                    <div class="card" onclick="openCard(event, 'st-Shradera')">
+                        <img alt="Avatar"
+                             src="material/st-Shradera.jpg"
+                             style="width:100%; height: 290px; padding: 1%;">
+                        <div class="container">
+                            <h4><b>Улица Шрадера</b></h4>
+                            <span><strong>Начинается: </strong>
                         <label>улица Богдана Хмельницкого</label><br>
                         <strong>Начинается: </strong>
                         <label>Гапеев ручей</label>
                     </span>
+                        </div>
                     </div>
-                </div>
-                <div class="card" onclick="openCard(event, 'st-Yanushovskogo')" style="margin-right: 35%">
-                    <img alt=""
-                         src="material/NOPIC.jpg" style="width:100%; height: 290px; padding: 1%">
-                    <div class="container">
-                        <h4><b>Улица Янушковского</b></h4>
-                        <span><strong>Начинается: </strong>
+                    <div class="card" onclick="openCard(event, 'st-Yanushovskogo')" style="margin-right: 35%">
+                        <img alt=""
+                             src="material/NOPIC.jpg" style="width:100%; height: 290px; padding: 1%">
+                        <div class="container">
+                            <h4><b>Улица Янушковского</b></h4>
+                            <span><strong>Начинается: </strong>
                         <label>улица Гагарина</label><br>
                         <strong>Заканчивается: </strong>
                         <label>улица Лажечникова</label><br>
                     </span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -6904,147 +7223,169 @@ require_once "request.php";
     </div>
 
     <div class="tabcontent" id="NamedAfterThem">
-        <h3 style="margin-top: 1%; opacity: 80%; background-color: #eaeaea; border: 2px solid #dbdbdb; padding: 0.5%;">
-            Места силы. Витебск - "Их именами названы школы"
-        </h3>
-        <div class="SchlsCard">
-            <div style="display: flex; justify-content: space-around">
-                <div class="card" onclick="openCard(event, 'gimn-5')">
-                    <img alt="" src="Styles/PhotoNamedAfterThem/гимназия%205.jpg"
-                         style="width:100%; height: 290px; padding: 1%; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);">
-                    <div class="container">
-                        <h4><b>Гимназия № 5 г. Витебска имени И.И. Людникова</b></h4>
+        <div data-aos="fade-up">
+            <h3 style="margin-top: 1%; opacity: 80%; background-color: #eaeaea; border: 2px solid #dbdbdb; padding: 0.5%;">
+                Места силы. Витебск - "Их именами названы школы"
+            </h3>
+        </div>
+        <div class="mainBottom" data-aos="fade-up" data-aos-duration="500">
+            <div style="padding: 1%; display: flex; align-items: baseline">
+                <img alt="" class="mainBottomPadLeft" src="material/FondMira.jpg"
+                     style="width: 10%; padding-right: -10%">
+                <img alt="" class="mainBottomPadLeft" src="material/Schl28.jpg" style="width: 10.4%">
+                <img alt="" class="mainBottomPadLeft" src="material/VebVesti.jpg" style="width: 22%;">
+            </div>
+        </div>
+        <div data-aos="fade-up" data-aos-once="true" data-aos-duration="600" >
+            <div class="SchlsCard">
+                <div style="display: flex; justify-content: space-around">
+                    <div class="card" onclick="openCard(event, 'gimn-5')">
+                        <img alt="" src="Styles/PhotoNamedAfterThem/гимназия%205.jpg"
+                             style="width:100%; height: 290px; padding: 1%; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);">
+                        <div class="container">
+                            <h4><b>Гимназия № 5 г. Витебска имени И.И. Людникова</b></h4>
+                        </div>
                     </div>
-                </div>
 
-                <div class="card" onclick="openCard(event, 'gimn-9')">
-                    <img alt="" src="Styles/PhotoNamedAfterThem/гимназия%209.jpg"
-                         style="width:100%; height: 290px; padding: 1%; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);">
-                    <div class="container">
-                        <h4><b>Гимназия № 9 г. Витебска имени А.П. Белобородова</b></h4>
+                    <div class="card" onclick="openCard(event, 'gimn-9')">
+                        <img alt="" src="Styles/PhotoNamedAfterThem/гимназия%209.jpg"
+                             style="width:100%; height: 290px; padding: 1%; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);">
+                        <div class="container">
+                            <h4><b>Гимназия № 9 г. Витебска имени А.П. Белобородова</b></h4>
+                        </div>
                     </div>
-                </div>
 
-                <div class="card" onclick="openCard(event, 'school-12')">
-                    <img alt="" src="Styles/PhotoNamedAfterThem/школа%2012.jpg"
-                         style="width:100%; height: 290px; padding: 1%; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);">
-                    <div class="container">
-                        <h4><b>Средняя школа № 12 г. Витебска имени Л.Н. Филипенко</b></h4>
+                    <div class="card" onclick="openCard(event, 'school-12')">
+                        <img alt="" src="Styles/PhotoNamedAfterThem/школа%2012.jpg"
+                             style="width:100%; height: 290px; padding: 1%; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);">
+                        <div class="container">
+                            <h4><b>Средняя школа № 12 г. Витебска имени Л.Н. Филипенко</b></h4>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="SchlsCard">
-            <div style="display: flex; justify-content: space-around">
-                <div class="card" onclick="openCard(event, 'school-16')">
-                    <img alt="" src="Styles/PhotoNamedAfterThem/школа%2016.jpg"
-                         style="width:100%; height: 290px; padding: 1%; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);">
-                    <div class="container">
-                        <h4><b>Средняя школа № 16 г. Витебска имени М.И. Дружинина</b></h4>
+        <div data-aos="fade-up" data-aos-once="true" data-aos-duration="700">
+            <div class="SchlsCard">
+                <div style="display: flex; justify-content: space-around">
+                    <div class="card" onclick="openCard(event, 'school-16')">
+                        <img alt="" src="Styles/PhotoNamedAfterThem/школа%2016.jpg"
+                             style="width:100%; height: 290px; padding: 1%; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);">
+                        <div class="container">
+                            <h4><b>Средняя школа № 16 г. Витебска имени М.И. Дружинина</b></h4>
+                        </div>
                     </div>
-                </div>
 
-                <div class="card" onclick="openCard(event, 'school-21')">
-                    <img alt="" src="Styles/PhotoNamedAfterThem/школа%2021.jpg"
-                         style="width:100%; height: 290px; padding: 1%; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);">
-                    <div class="container">
-                        <h4><b>Средняя школа №21 г. Витебска имени Героя Советского Союза В. А. Демидова</b></h4>
+                    <div class="card" onclick="openCard(event, 'school-21')">
+                        <img alt="" src="Styles/PhotoNamedAfterThem/школа%2021.jpg"
+                             style="width:100%; height: 290px; padding: 1%; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);">
+                        <div class="container">
+                            <h4><b>Средняя школа №21 г. Витебска имени Героя Советского Союза В. А. Демидова</b></h4>
+                        </div>
                     </div>
-                </div>
 
-                <div class="card" onclick="openCard(event, 'school-24')">
-                    <img alt="" src="Styles/PhotoNamedAfterThem/школа%2024.jpg"
-                         style="width:100%; height: 290px; padding: 1%; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);">
-                    <div class="container">
-                        <h4><b>Средняя школа № 24 г. Витебска имени М. Ф. Маскаева</b></h4>
+                    <div class="card" onclick="openCard(event, 'school-24')">
+                        <img alt="" src="Styles/PhotoNamedAfterThem/школа%2024.jpg"
+                             style="width:100%; height: 290px; padding: 1%; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);">
+                        <div class="container">
+                            <h4><b>Средняя школа № 24 г. Витебска имени М. Ф. Маскаева</b></h4>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="SchlsCard">
-            <div style="display: flex; justify-content: space-around">
-                <div class="card" onclick="openCard(event, 'school-31')">
-                    <img alt="" src="Styles/PhotoNamedAfterThem/школа%2031.jpg"
-                         style="width:100%; height: 290px; padding: 1%; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);">
-                    <div class="container">
-                        <h4><b>Средняя школа № 31 г. Витебска имени В. З. Хоружей</b></h4>
+        <div data-aos="fade-up" data-aos-once="true" data-aos-duration="800">
+            <div class="SchlsCard">
+                <div style="display: flex; justify-content: space-around">
+                    <div class="card" onclick="openCard(event, 'school-31')">
+                        <img alt="" src="Styles/PhotoNamedAfterThem/школа%2031.jpg"
+                             style="width:100%; height: 290px; padding: 1%; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);">
+                        <div class="container">
+                            <h4><b>Средняя школа № 31 г. Витебска имени В. З. Хоружей</b></h4>
+                        </div>
                     </div>
-                </div>
 
-                <div class="card" onclick="openCard(event, 'school-33')">
-                    <img alt="" src="Styles/PhotoNamedAfterThem/школа%2033.jpg"
-                         style="width:100%; height: 290px; padding: 1%; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);">
-                    <div class="container">
-                        <h4><b>Средняя школа № 33 г. Витебска имени И. Д. Черняховского</b></h4>
+                    <div class="card" onclick="openCard(event, 'school-33')">
+                        <img alt="" src="Styles/PhotoNamedAfterThem/школа%2033.jpg"
+                             style="width:100%; height: 290px; padding: 1%; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);">
+                        <div class="container">
+                            <h4><b>Средняя школа № 33 г. Витебска имени И. Д. Черняховского</b></h4>
+                        </div>
                     </div>
-                </div>
 
-                <div class="card" onclick="openCard(event, 'school-40')">
-                    <img alt="" src="Styles/PhotoNamedAfterThem/школа%2040.jpg"
-                         style="width:100%; height: 290px; padding: 1%; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);">
-                    <div class="container">
-                        <h4><b>Средняя школа № 40 г. Витебска имени М. М. Громова</b></h4>
+                    <div class="card" onclick="openCard(event, 'school-40')">
+                        <img alt="" src="Styles/PhotoNamedAfterThem/школа%2040.jpg"
+                             style="width:100%; height: 290px; padding: 1%; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);">
+                        <div class="container">
+                            <h4><b>Средняя школа № 40 г. Витебска имени М. М. Громова</b></h4>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="SchlsCard">
-            <div style="display: flex; justify-content: space-around">
-                <div class="card" onclick="openCard(event, 'school-42')">
-                    <img alt="" src="Styles/PhotoNamedAfterThem/школа%2042.jpg"
-                         style="width:100%; height: 290px; padding: 1%; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);">
-                    <div class="container">
-                        <h4><b>Средняя школа № 42 г. Витебска имени Д.Ф. Райцева</b></h4>
+        <div data-aos="fade-up" data-aos-once="true" data-aos-duration="900">
+            <div class="SchlsCard">
+                <div style="display: flex; justify-content: space-around">
+                    <div class="card" onclick="openCard(event, 'school-42')">
+                        <img alt="" src="Styles/PhotoNamedAfterThem/школа%2042.jpg"
+                             style="width:100%; height: 290px; padding: 1%; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);">
+                        <div class="container">
+                            <h4><b>Средняя школа № 42 г. Витебска имени Д.Ф. Райцева</b></h4>
+                        </div>
                     </div>
-                </div>
 
-                <div class="card" onclick="openCard(event, 'school-43')">
-                    <img alt="" src="Styles/PhotoNamedAfterThem/школа%2043.jpg"
-                         style="width:100%; height: 290px; padding: 1%; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);">
-                    <div class="container">
-                        <h4><b>Средняя школа № 43 г. Витебска имени М. Ф. Шмырева</b></h4>
+                    <div class="card" onclick="openCard(event, 'school-43')">
+                        <img alt="" src="Styles/PhotoNamedAfterThem/школа%2043.jpg"
+                             style="width:100%; height: 290px; padding: 1%; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);">
+                        <div class="container">
+                            <h4><b>Средняя школа № 43 г. Витебска имени М. Ф. Шмырева</b></h4>
+                        </div>
                     </div>
-                </div>
 
-                <div class="card" onclick="openCard(event, 'school-45')">
-                    <img alt="" src="Styles/PhotoNamedAfterThem/школа%2045.jpg"
-                         style="width:100%; height: 290px; padding: 1%; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);">
-                    <div class="container">
-                        <h4><b>Средняя школа № 45 г. Витебска имени В. Ф. Маргелова</b></h4>
+                    <div class="card" onclick="openCard(event, 'school-45')">
+                        <img alt="" src="Styles/PhotoNamedAfterThem/школа%2045.jpg"
+                             style="width:100%; height: 290px; padding: 1%; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);">
+                        <div class="container">
+                            <h4><b>Средняя школа № 45 г. Витебска имени В. Ф. Маргелова</b></h4>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="SchlsCard">
-            <div style="display: flex; justify-content: space-around">
-                <div class="card" onclick="openCard(event, 'school-46')">
-                    <img alt="" src="Styles/PhotoNamedAfterThem/школа%2046.jpg"
-                         style="width:100%; height: 290px; padding: 1%; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);">
-                    <div class="container">
-                        <h4><b>Средняя школа № 46 г. Витебска имени маршала И. Х. Баграмяна</b></h4>
+        <div data-aos="fade-up" data-aos-once="true">
+            <div class="SchlsCard">
+            </div>
+            <div data-aos="fade-up" data-aos-once="true">
+                <div style="display: flex; justify-content: space-around">
+                    <div class="card" onclick="openCard(event, 'school-46')">
+                        <img alt="" src="Styles/PhotoNamedAfterThem/школа%2046.jpg"
+                             style="width:100%; height: 290px; padding: 1%; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);">
+                        <div class="container">
+                            <h4><b>Средняя школа № 46 г. Витебска имени маршала И. Х. Баграмяна</b></h4>
+                        </div>
                     </div>
-                </div>
 
-                <div class="card" onclick="openCard(event, 'school-43')">
-                    <img alt="" src="Styles/PhotoNamedAfterThem/школа%2043.jpg"
-                         style="width:100%; height: 290px; padding: 1%; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);">
-                    <div class="container">
-                        <h4><b>Средняя школа № 43 г. Витебска имени М. Ф. Шмырева</b></h4>
+                    <div class="card" onclick="openCard(event, 'school-43')">
+                        <img alt="" src="Styles/PhotoNamedAfterThem/школа%2043.jpg"
+                             style="width:100%; height: 290px; padding: 1%; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);">
+                        <div class="container">
+                            <h4><b>Средняя школа № 43 г. Витебска имени М. Ф. Шмырева</b></h4>
+                        </div>
                     </div>
                 </div>
             </div>
-    </div>
+        </div>
     </div>
 
     <div class="tabcontent" id="WarGraves">
         <h3 style="margin-top: 1%; opacity: 80%; background-color: #eaeaea; border: 2px solid #dbdbdb; padding: 0.5%;">
             Места силы. Витебск - Воинские захоранения
         </h3>
-        <div class="warGravesCard">
+        <div class="warGravesCard" data-aos="fade-up" data-aos-duration="400">
             <div style="display: flex; justify-content: space-around">
                 <div class="card" onclick="openCard(event, 'graves-1')">
                     <div class="container">
@@ -7074,12 +7415,8 @@ require_once "request.php";
                 </div>
             </div>
         </div>
-        <div style="display: flex">
-            <hr>
-            1
         <hr>
-        </div>
-        <div class="warGravesCard">
+        <div class="warGravesCard" data-aos="fade-up" data-aos-duration="500">
             <div style="display: flex; justify-content: space-around">
                 <div class="card" onclick="openCard(event, 'graves-4')">
                     <div class="container">
@@ -7110,55 +7447,90 @@ require_once "request.php";
             </div>
         </div>
         <hr>
-        <div class="warGravesCard">
+        <div class="warGravesCard" data-aos="fade-up" data-aos-duration="600">
             <div style="display: flex; justify-content: space-around">
-                <div class="card" onclick="openCard(event, 'graves-4')">
+                <div class="card" onclick="openCard(event, 'graves-7')">
                     <div class="container">
-                        <h4><b>Братская могила</b></h4>
+                        <h4><b>Воинское кладбище</b></h4>
                         <p>
-                            г. Витебск, садоводческое товарищество, гражданское кладбище «Лучёса-Май».
+                            Расположено по адресу: г. Витебск, ул. Титова
                         </p>
                     </div>
                 </div>
 
-                <div class="card" onclick="openCard(event, 'graves-5')">
+                <div class="card" onclick="openCard(event, 'graves-8')">
+                    <div class="container">
+                        <h4><b>Братская могила</b></h4>
+                        <p>
+                            Установлена по адресу: г. Витебск, ул. 7-я Полоцкая (гражданское кладбище
+                            «Старо-Семеновское»). Основано в 1985 году.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card" onclick="openCard(event, 'graves-9')">
                     <div class="container">
                         <h4><b>Индивидуальная могила</b></h4>
                         <p>
-                            г. Витебск, ул. М. Горького (гражданское кладбище «Ореховское»).
-                        </p>
-                    </div>
-                </div>
-
-                <div class="card" onclick="openCard(event, 'graves-6')">
-                    <div class="container">
-                        <h4><b>Братская могила</b></h4>
-                        <p>
-                            г. Витебск, ул. Ленинградская.
+                            Расположена по адресу: г. Витебск, ул. 7-я Полоцкая (гражданское кладбище
+                            «Старо-Семеновское»).
                         </p>
                     </div>
                 </div>
             </div>
         </div>
+
+        <!--        <div class="warGravesCard" id="warGravesAnim-4">-->
+        <!--            <div style="display: flex; justify-content: space-around">-->
+        <!--                <div class="card" onclick="openCard(event, 'graves-4')">-->
+        <!--                    <div class="container">-->
+        <!--                        <h4><b>Братская могила</b></h4>-->
+        <!--                        <p>-->
+        <!--                            г. Витебск, садоводческое товарищество, гражданское кладбище «Лучёса-Май».-->
+        <!--                        </p>-->
+        <!--                    </div>-->
+        <!--                </div>-->
+
+        <!--                <div class="card" onclick="openCard(event, 'graves-5')">-->
+        <!--                    <div class="container">-->
+        <!--                        <h4><b>Индивидуальная могила</b></h4>-->
+        <!--                        <p>-->
+        <!--                            г. Витебск, ул. М. Горького (гражданское кладбище «Ореховское»).-->
+        <!--                        </p>-->
+        <!--                    </div>-->
+        <!--                </div>-->
+
+        <!--                <div class="card" onclick="openCard(event, 'graves-6')">-->
+        <!--                    <div class="container">-->
+        <!--                        <h4><b>Братская могила</b></h4>-->
+        <!--                        <p>-->
+        <!--                            г. Витебск, ул. Ленинградская.-->
+        <!--                        </p>-->
+        <!--                    </div>-->
+        <!--                </div>-->
+        <!--            </div>-->
+        <!--        </div>-->
     </div>
 </div>
-    <script
-            crossorigin="anonymous"
-            integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
-            src="https://code.jquery.com/jquery-3.6.0.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="js/jquery-3.1.1.min.js"></script>
-    <script src="script.js"></script>
-    <script crossorigin="anonymous"
-            integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi"
-            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"></script>
-    <script crossorigin="anonymous"
-            integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG"
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js"></script>
-    <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
-          integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" rel="stylesheet">
-    <script crossorigin="anonymous"
-            integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script
+        crossorigin="anonymous"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+        src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="AOS.js"></script>
+<script src="script.js"></script>
+<script crossorigin="anonymous"
+        integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi"
+        src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"></script>
+<script crossorigin="anonymous"
+        integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG"
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js"></script>
+<link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" rel="stylesheet">
+<script crossorigin="anonymous"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
