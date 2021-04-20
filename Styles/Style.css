@@ -75,12 +75,19 @@
 
 /* Style the tab content */
 .tabcontent input {
-    box-shadow: 0 0 27px rgb(0 0 0 / 20%);
-    background-color: #d7d7d7;
+    background-color: #b3b3b3;
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
-    transition: all 0.3s ease;
+    display: inline-block;
+    border-radius: 4px;
+    border: none;
+    font-size: 28px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    font-weight: bold;
+    opacity: 80%;
 }
 
 .tabcontent input:hover {
@@ -99,7 +106,7 @@
     cursor: pointer;
 }
 
-.container {
+.container  {
     padding: 2px 16px;
 }
 
@@ -107,7 +114,6 @@ body {
     background: url(../material/Background-Web.jpg) no-repeat center center fixed;
     background-size: cover;
     height: 100%;
-    /*overflow: hidden;*/
 }
 
 .tabcontent {
@@ -476,7 +482,7 @@ body {
 
 @keyframes tab-click {
     0% {
-        transform: translateY(150%);
+        transform: translateY(10%);
         opacity: 0;
     }
 

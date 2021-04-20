@@ -18,6 +18,7 @@ function openTab(evt, cityName) {
         tablinks[i].className = tablinks[i].className.replace(" active", "");
     }
 
+
     // Show the current tab, and add an "active" class to the button that opened the tab
     document.getElementById(cityName).style.display = "block";
     document.getElementsByName(cityName)[0].className += " active";
