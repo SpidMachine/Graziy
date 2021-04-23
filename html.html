@@ -20,7 +20,7 @@ require_once "request.php";
     <div class="tab" id="aside1">
         <button class="tablinks active" name="Main" onclick="openTab(event, 'Main')">Главная</button>
         <div class="dropdown">
-            <button class="dropbtn" onclick="myFunction();">На нашем сайте</button>
+            <button class="dropbtn" onclick="myFunctionFrs();">На нашем сайте</button>
             <div class="dropdown-content" id="myDropdown">
                 <button class="tablinks" name="Streets" onclick="openTab(event, 'Streets')">Улицы</button>
                 <button class="tablinks" name="Monuments" onclick="openTab(event, 'Monuments')">Памятники</button>
@@ -36,13 +36,36 @@ require_once "request.php";
                 </button>
             </div>
         </div>
-        <button class="tablinks" name="Memorials" onclick="openTab(event, 'Memorials')">Квест-игры</button>
-        <a href="https://forms.gle/bDQtAER6EuqUWtvd7" id="alert">
-            <button class="tablinks" name="Memorials">
-                Проверь себя
-            </button>
-        </a>
-        <button class="tablinks" name="AboutProject" onclick="openTab(event, 'AboutProject')">О проекте
+
+        <!--        <button class="tablinks" name="Memorials" onclick="openTab(event, '')">Квест-игры</button>-->
+
+        <div class="dropdown">
+            <button class="dropbtn" onclick="myFunctionSec();">Проверь себя</button>
+            <div class="dropdown-content" id="checkYourSelfDropdown">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSc2QaajaD1pLDgRqDuPWZvMu6U8XCEhxwFFdbS2Y1Xjk_5z8w/viewform"
+                   id="alert1">
+                    <button class="tablinks" name="TestMonument">
+                        Тест по памятникам
+                    </button>
+                </a>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdbZIdhsJiHxTfcw8guMumtDiYfA8e6jkHGtDkTtfVNuzvP1g/viewform"
+                   id="alert2">
+                    <button class="tablinks" name="TestStreet">
+                        Тест по улицам
+                    </button>
+                </a>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSc3u3z7_sWpLcJKvth1uaLCjyEX2hX7Q7n1AyuF1V8hzrlCAA/viewform"
+                   id="alert">
+                    <button class="tablinks" name="TestSchool">
+                        Тест по школам
+                    </button>
+                </a>
+            </div>
+        </div>
+
+        <button class="tablinks" name="AboutProject" onclick="openTab(event, 'AboutProject')"
+                style="float: right;
+    margin-right: 2%;">О проекте
         </button>
     </div>
 
@@ -51,23 +74,11 @@ require_once "request.php";
         <div style="animation: tab-click 350ms forwards;">
             <h3 style="margin-top: 1%; opacity: 80%; background-color: #eaeaea; border: 2px solid #dbdbdb; padding: 0.5%;">
                 Главная</h3>
-            <div style="animation: tab-click 350ms forwards; display: flex; justify-content:
-             center;">
-                <img alt="" src="material/v-nazvaniyah-pamyat-zhivet.jpg" style="border: 1px solid black">
-            </div>
-            <p style="animation: tab-click 450ms forwards;"><span style="margin-left: 3%">Гуляя
-            </span> по городу, мы читаем на домах названия улиц и
-                переулков, но
-                редко
-                задумываемся, почему они так названы. <br>
+            <p style="animation: tab-click 450ms forwards; margin-left: 8%; margin-right: 8%"><span
+                    style="margin-left: 3%">Концепция
+            </span> Совместного проекта ГУО "Средняя школа №28 г. Витебска"("Школа мира") и учреждения редакции
+                "Витебская областная газета "Витебские вести" - "Места силы. Витебск".<br></p>
 
-                <span style="margin-left: 3%">В</span> Витебске около 900 улиц, проспектов, площадей, переулков и
-                тупиков.
-                Но в данном разделе мы коснемся только
-                тех из них, которые так или иначе связаны с событиями Великой Отечественной войны на Витебщине. В ходе
-                освобождения Витебской области от немецко-фашистских захватчиков советские воины совершили немало
-                героических подвигов. Город, как и люди, помнит тех, кто боролся за его свободу. Их имена увековечены в
-                названиях улиц, аллей, проспектов и площадей.</p>
             <div class="mainBottom" style="animation: tab-click 550ms forwards;">
                 <div style="padding: 1%; display: flex; align-items: baseline">
                     <img alt="" class="mainBottomPadLeft" src="material/FondMira.jpg"
@@ -76,31 +87,94 @@ require_once "request.php";
                     <img alt="" class="mainBottomPadLeft" src="material/VebVesti.jpg" style="width: 22%;">
                 </div>
             </div>
-
-            <p style="animation: tab-click 650ms forwards; text-align: center">
-                <strong>Улицы Витебска</strong><br>
-
-                <i>Спешат и торопятся улицы двинские. <br>
-                    Эта – Гастелло, а эта – Свидинского. <br>
-                    Там на пригорке, как зорька рассветная, <br>
-                    Улица Веры Хоружей приветная. <br>
-                    Тут, по-над Витьбою, быстрою речкою <br>
-                    Солнечно светится улица Свечкиных, <br>
-                    Гулко взлетает на взгорье – Доватора, <br>
-                    К ней устремляется улица Шрадера, <br>
-                    С ними сплелись воедино живущие <br>
-                    Улицы, к подвигам новым зовущие. <br>
-                    Улицы дерзких стремлений и мужества, <br>
-                    В них поколений проходит содружество. <br>
-                    Батька Минай возвышается витязем – <br>
-                    Слава и гордость отважного Витебска. <br>
-                    Улицы стойкости, улицы-символы! <br>
-                    Черпаем в них вдохновенье и силы мы.</i> <br>
-                <strong style="margin-left: 23%">Юрий Докторов</strong>
-            </p>
         </div>
+            <div style="margin-left: 8%; margin-right: 8%">
+                <div style="margin-left: 5%">
+                    <h5>Места силы… Витебск.</h5>
+
+                    <div style="padding: 1%">
+                        <span style="margin-left: 3%">У</span> каждого человека есть свое «место силы». Для кого-то это
+                        родной
+                        дом, где
+                        родились его предки. Для
+                        других
+                        -- деревушка, где вырос, или улица, ставшая родной. А может быть, это работа, которую любишь ,
+                        или
+                        город, в
+                        котором живешь?
+                        <br>
+                    </div>
+                    <div style="padding: 1%">
+                        <span style="margin-left: 3%">После</span> Великой Отечественной войны появились особые «места
+                        силы».
+                        Именно
+                        там
+                        можно почтить память наших
+                        героических предков, испытать гордость за свою Родину, да и просто постоять в молчании. Речь
+                        идёт о
+                        значимых
+                        местах, связанных с событиями Великой Отечественной войны. В каждом городе Беларуси есть улицы,
+                        памятники,
+                        мемориальные знаки и таблички, братские могилы, которые можно назвать «местами силы». <br>
+                    </div>
+                    <div style="padding: 1%">
+                        <span style="margin-left: 3%">В</span> Витебске таких мест около сотни . До недавнего времени
+                        отыскать
+                        их
+                        было
+                        непросто, но после реализации
+                        совместного проекта витебской «Школы мира» («ГУО «Средняя школа №28 г. Витебска») и учреждения
+                        редакции
+                        «Витебская областная газета «Витебские вести» на просторах Интернета появился сайт «Места силы…
+                        Витебск»,
+                        где систематизирован и обобщён весь известный нам материал. <br>
+                    </div>
+                    <div style="padding: 1%">
+                        <span style="margin-left: 3%">Теперь</span> каждый небезразличный к истории родного края может с
+                        легкостью
+                        найти в Витебске «места силы»
+                        мужественного белорусского и советского народа. Сайт продолжает развиваться. Вскоре он будет
+                        дополнен
+                        разделами «Проверь себя» (тесты и задания по знанию памятных мест областного центра),
+                        «Квест-игры»
+                        (разработки квест-игры по памятным местам Витебска), «Фотогалерея», «Публикации», а возможно, и
+                        чем-то
+                        еще
+                        полезным.
+                    </div>
+                    <br>
+
+                    <div style="padding: 1%">
+                        <span style="margin-left: 4%">Никто</span> не забыт, ничто не забыто!
+                    </div>
+                </div>
+            </div>
     </div>
 
+    <div class="tabcontent" data-aos="fade-up" id="AboutProject">
+        <h3 style="margin-top: 1%; opacity: 80%; background-color: #eaeaea; border: 2px solid #dbdbdb; padding: 0.5%;">
+            О проекте</h3>
+        <div>
+            <h3 style="text-align: center">Команда</h3>
+            <div class="projectTeamHeightLvl" style="display: flex;justify-content: center">
+                <div class="card" style="padding: 1%">
+                    <img alt="" src="Styles/ProjectTeam/Координатор%20проекта,%20учитель%20Кутынко%20А.%20А..jpg">
+                </div>
+                <div class="card" style="padding: 1%;">
+                    <img alt=""
+                         src="Styles/ProjectTeam/Техническая%20поддерджка,%20дизайн/"
+                         style="">
+                    <div class="container">
+                        <p>Координатор проекта,</p>
+                    </div>
+                </div>
+                <div class="card" style="padding: 1%">
+                    <img alt=""
+                         src="Styles/ProjectTeam/Техническая%20поддерджка,%20дизайн/Дизайн%20проекта,%20редактор%20интернет-издания%20Витебские%20вести%20Петр%20Чимковский.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-------------------------------------------------------Card content-->
     <span>
@@ -7524,7 +7598,7 @@ require_once "request.php";
              <div class="strDiscript">
                 <h4 style="display: flex; justify-content: space-between"><b>Памятник-бюст Вере Захаровне Хоружей
                 </b><input class="tablinks" name="Monuments" onclick="openTab(event, 'Monuments')" type="button"
-                       value="<< Вернуться"></h4>
+                           value="<< Вернуться"></h4>
                     <p><strong>Местоположение:</strong><br>
                         Расположен по адресу: г. Витебск, Московский проспект, на территории ГУО «Средняя школа № 31 г. Витебска».<br>
                     </p>
@@ -7612,7 +7686,8 @@ require_once "request.php";
                         Расположен по адресу: г. Витебск, Московский проспект, 33.<br>
                     </p>
                  <div class="image__wrapper">
-                    <img alt="" class="minimized" src="Styles/PhotosMonument/4%20Памятный%20знак%20погибшим%20студентам%20свеча%20памяти.jpg"
+                    <img alt="" class="minimized"
+                         src="Styles/PhotosMonument/4%20Памятный%20знак%20погибшим%20студентам%20свеча%20памяти.jpg"
                          style="width: 50%;
     margin-left: 10%;">
                 </div>
@@ -7692,7 +7767,8 @@ require_once "request.php";
                         Находится по адресу: г. Витебск, перед зданием по ул. Энгельса, 2.<br>
                     </p>
                  <div class="image__wrapper">
-                    <img alt="" class="minimized" src="Styles/PhotosMonument/7%20Памятный%20знак%20еврейское%20гетто.jpg"
+                    <img alt="" class="minimized"
+                         src="Styles/PhotosMonument/7%20Памятный%20знак%20еврейское%20гетто.jpg"
                          style="width: 50%;
     margin-left: 10%;">
                 </div>
@@ -7748,7 +7824,8 @@ require_once "request.php";
                         Находится в сквере на улице Космонавтов г. Витебска. <br>
                     </p>
                  <div class="image__wrapper">
-                    <img alt="" class="minimized" src="Styles/PhotosMonument/9%20Комсомольцам%20Железнодрожного%20района.jpg"
+                    <img alt="" class="minimized"
+                         src="Styles/PhotosMonument/9%20Комсомольцам%20Железнодрожного%20района.jpg"
                          style="width: 50%;
     margin-left: 10%;">
                 </div>
@@ -7779,7 +7856,8 @@ require_once "request.php";
                         Расположен по адресу: г. Витебск, ул. Комсомольская, 23, территория ГУО «Гимназия № 2 г. Витебска».<br>
                     </p>
                  <div class="image__wrapper">
-                    <img alt="" class="minimized" src="Styles/PhotosMonument/10%20Памятный%20знак%20погибшим%20ученикам.jpg"
+                    <img alt="" class="minimized"
+                         src="Styles/PhotosMonument/10%20Памятный%20знак%20погибшим%20ученикам.jpg"
                          style="width: 50%;
     margin-left: 10%;">
                 </div>
@@ -7837,7 +7915,8 @@ require_once "request.php";
                         Расположен на территории Локомотивного депо г. Витебска.<br>
                     </p>
                  <div class="image__wrapper">
-                    <img alt="" class="minimized" src="Styles/PhotosMonument/12%20Памятник%20погибшим%20железнодорожникам.jpg"
+                    <img alt="" class="minimized"
+                         src="Styles/PhotosMonument/12%20Памятник%20погибшим%20железнодорожникам.jpg"
                          style="width: 50%;
     margin-left: 10%;">
                 </div>
@@ -8003,7 +8082,8 @@ require_once "request.php";
                         Расположен на площади Победы г. Витебска.<br>
                     </p>
                  <div class="image__wrapper">
-                    <img alt="" class="minimized" src="Styles/PhotosMonument/18%20Сотрудникам%20ветинститута%20погибшим.jpg"
+                    <img alt="" class="minimized"
+                         src="Styles/PhotosMonument/18%20Сотрудникам%20ветинститута%20погибшим.jpg"
                          style="width: 50%;
     margin-left: 10%;">
                 </div>

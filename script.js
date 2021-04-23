@@ -85,8 +85,12 @@ $(function () {
 });
 
 
-function myFunction() {
+function myFunctionFrs() {
     document.getElementById("myDropdown").classList.toggle("show");
+}
+
+function myFunctionSec() {
+    document.getElementById("checkYourSelfDropdown").classList.toggle("show");
 }
 
 // Close the dropdown menu if the user clicks outside of it
